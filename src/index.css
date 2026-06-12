@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: #f5f0e8;
+    color: #0d0d0d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer components {
+  /* Containers */
+  .container-standard {
+    @apply w-full max-w-[1100px] mx-auto px-16 max-md:px-6;
+  }
+  .container-wide {
+    @apply w-full max-w-[1280px] mx-auto px-16 max-md:px-6;
+  }
+  .container-narrow {
+    @apply w-full max-w-[720px] mx-auto px-16 max-md:px-6;
+  }
+
+  /* Sections */
+  .section {
+    @apply py-[100px] max-md:py-16;
+  }
+  .section-dark {
+    @apply bg-primary text-cream-surface py-[100px] max-md:py-16;
+  }
+  .section-cream {
+    @apply bg-cream py-[100px] max-md:py-16;
+  }
+  .section-surface {
+    @apply bg-cream-surface py-[100px] max-md:py-16;
+  }
+
+  /* Overlines */
+  .overline {
+    @apply font-body text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-muted;
+  }
+  .overline-gold {
+    @apply font-body text-[12px] font-semibold uppercase tracking-[0.12em] text-accent;
+  }
+  .overline-cream {
+    @apply font-body text-[12px] font-semibold uppercase tracking-[0.12em] text-cream-surface/60;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2
+           bg-accent hover:bg-accent-hover
+           text-ink font-body font-semibold text-[16px]
+           px-8 py-4 rounded-btn
+           shadow-btn hover:shadow-btn-hover
+           transition-all duration-200
+           hover:-translate-y-px cursor-pointer;
+  }
+  .btn-ghost-dark {
+    @apply inline-flex items-center gap-2
+           bg-transparent border border-cream-surface/40
+           hover:border-cream-surface/80 hover:bg-cream-surface/10
+           text-cream-surface font-body font-semibold text-[16px]
+           px-8 py-4 rounded-btn
+           transition-all duration-200 cursor-pointer;
+  }
+  .btn-ghost-light {
+    @apply inline-flex items-center gap-2
+           bg-transparent border border-primary/30
+           hover:border-primary hover:bg-primary/5
+           text-primary font-body font-semibold text-[16px]
+           px-8 py-4 rounded-btn
+           transition-all duration-200 cursor-pointer;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-cream-surface rounded-card shadow-card
+           border border-transparent hover:border-border
+           hover:shadow-card-hover
+           transition-all duration-300
+           p-8 max-md:p-6;
+  }
+  .card-dark {
+    @apply bg-primary-mid rounded-card
+           p-8 max-md:p-6
+           transition-all duration-300;
+  }
+
+  /* Links */
+  .link-gold {
+    @apply text-accent hover:text-accent-hover
+           font-body font-semibold text-[14px]
+           tracking-wide transition-colors duration-200
+           inline-flex items-center gap-1;
+  }
+  .link-cream {
+    @apply text-cream-surface/80 hover:text-cream-surface
+           font-body font-semibold text-[14px]
+           transition-colors duration-200
+           inline-flex items-center gap-1;
+  }
+
+  /* Divider */
+  .divider {
+    @apply w-12 h-[2px] bg-accent;
+  }
+}
