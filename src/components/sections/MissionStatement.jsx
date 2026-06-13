@@ -40,21 +40,8 @@ export default function MissionStatement() {
           animate={inView ? "visible" : "hidden"}
           className="flex justify-center lg:justify-start"
         >
-          <div className="relative w-full max-w-[300px] lg:max-w-none aspect-[3/4] bg-cream-alt rounded-t-full overflow-hidden border border-border/60">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-              <div className="w-px h-10 bg-ink/10" />
-              <span className="font-body text-[10px] font-medium tracking-[0.14em] uppercase text-ink-muted/50 text-center px-8">
-                Editorial Photograph
-              </span>
-            </div>
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-              <div className="bg-ink/[0.04] border border-ink/[0.07] rounded-[2px] px-4 py-1.5">
-                <span className="font-body text-[9px] font-medium tracking-[0.1em] uppercase text-ink-muted/60 whitespace-nowrap">
-                  Editorial Photograph — Care in the Community
-                </span>
-              </div>
-            </div>
-          </div>
+          <img src="/care.jpg" alt="" />
+
         </motion.div>
 
         {/* Right — Copy */}

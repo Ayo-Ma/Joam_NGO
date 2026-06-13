@@ -13,6 +13,7 @@ const PROGRAMS = [
     href: "/programs#maternal",
     imageCaption: "Maternal Care",
     reverse: false,
+    imgSrc: "/care.jpg",
   },
   {
     num: "02",
@@ -23,6 +24,7 @@ const PROGRAMS = [
     href: "/programs#scholarships",
     imageCaption: "Student Scholarships",
     reverse: true,
+    imgSrc: "/care.jpg",
   },
   {
     num: "03",
@@ -33,6 +35,7 @@ const PROGRAMS = [
     href: "/programs#elderly",
     imageCaption: "Elderly Care",
     reverse: false,
+    imgSrc: "/care.jpg",
   },
 ];
 
@@ -47,12 +50,20 @@ const fadeUp = {
 
 const fadeLeft = {
   hidden: { opacity: 0, x: -40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 const fadeRight = {
   hidden: { opacity: 0, x: 40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 export default function ProgramsOverview() {
@@ -65,7 +76,6 @@ export default function ProgramsOverview() {
       className="bg-cream-surface py-16 lg:py-20 px-5 sm:px-8 lg:px-16"
     >
       <div className="max-w-container mx-auto">
-
         {/* Section header */}
         <div ref={headerRef} className="mb-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
@@ -80,7 +90,8 @@ export default function ProgramsOverview() {
                 id="programs-heading"
                 className="font-display font-bold text-ink leading-[1.12] tracking-[-0.01em] text-[clamp(30px,3.8vw,48px)]"
               >
-                Three pillars,<br />
+                Three pillars,
+                <br />
                 <em className="not-italic text-primary">one promise</em>
               </h2>
             </motion.div>
@@ -148,19 +159,12 @@ function ProgramRow({ program }) {
         className={program.reverse ? "lg:order-last" : ""}
       >
         <div className="relative w-full aspect-[4/3] bg-cream-alt rounded-t-[120px] overflow-hidden border border-border/60 group">
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-            <div className="w-px h-8 bg-ink/10" />
-            <span className="font-body text-[10px] font-medium tracking-[0.14em] uppercase text-ink-muted/45 text-center px-6">
-              Programme Photograph
-            </span>
-          </div>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-            <div className="bg-ink/[0.04] border border-ink/[0.07] rounded-[2px] px-3 py-1.5">
-              <span className="font-body text-[9px] tracking-[0.1em] text-ink-muted/55 uppercase whitespace-nowrap">
-                Programme Photograph — {program.imageCaption}
-              </span>
-            </div>
-          </div>
+          <img
+            src={program.imgSrc}
+            alt={program.imageCaption}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
           <div className="absolute bottom-4 right-5">
             <span className="font-display text-[72px] font-bold leading-none text-ink/[0.05] select-none">
               {program.num}
@@ -180,11 +184,15 @@ function ProgramRow({ program }) {
           <span className="font-display text-[16px] italic text-accent leading-none">
             {program.num}
           </span>
-          <Overline color="gold" withLine={false}>{program.tag}</Overline>
+          <Overline color="gold" withLine={false}>
+            {program.tag}
+          </Overline>
         </div>
 
-        <h3 className="font-display font-bold text-ink leading-[1.2] tracking-[-0.01em] mb-4
-          text-[clamp(24px,2.8vw,36px)]">
+        <h3
+          className="font-display font-bold text-ink leading-[1.2] tracking-[-0.01em] mb-4
+          text-[clamp(24px,2.8vw,36px)]"
+        >
           {program.headline}
           <br />
           <em className="not-italic text-primary">{program.headlineAccent}</em>
@@ -236,8 +244,12 @@ function BottomCTA() {
         </p>
       </div>
       <div className="flex gap-3 flex-wrap">
-        <Button variant="primary" href="/donate">Donate Now</Button>
-        <Button variant="ghost-light" href="/programs">All Programs</Button>
+        <Button variant="primary" href="/donate">
+          Donate Now
+        </Button>
+        <Button variant="ghost-light" href="/programs">
+          All Programs
+        </Button>
       </div>
     </motion.div>
   );
