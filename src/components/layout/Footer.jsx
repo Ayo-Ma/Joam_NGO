@@ -24,7 +24,7 @@ const SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary">
+    <footer className="bg-primary  border-y-2 border-accent ">
 
       {/* Main content */}
       <div className="max-w-container mx-auto px-5 sm:px-8 lg:px-16 pt-16 pb-10">
