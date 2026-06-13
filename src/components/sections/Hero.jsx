@@ -80,18 +80,9 @@ export default function Hero() {
           {/* Main image */}
           <div className="w-full aspect-[4/5] bg-primary-mid/40 border border-cream-surface/[0.06] rounded-[2px] relative overflow-hidden">
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-              <div className="w-px h-10 bg-cream-surface/20" />
-              <span className="font-body text-[10px] font-medium tracking-[0.14em] uppercase text-cream-surface/30 text-center px-8">
-                Hero Photograph — Mother &amp; Child
-              </span>
+              <img src="./imageoofmotherandhild.webp" alt="" />
             </div>
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-              <div className="bg-cream-surface/10 backdrop-blur-sm border border-cream-surface/[0.08] rounded-[2px] px-4 py-1.5">
-                <span className="font-body text-[9px] font-medium tracking-[0.1em] uppercase text-cream-surface/45 whitespace-nowrap">
-                  Hero Photograph — Mother &amp; Child, Warm Portrait
-                </span>
-              </div>
-            </div>
+          
           </div>
 
           {/* Floating stat card */}
