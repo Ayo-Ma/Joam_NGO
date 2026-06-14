@@ -94,20 +94,8 @@ export default function VolunteerCTA() {
           animate={inView ? "visible" : "hidden"}
           className="hidden lg:block"
         >
-          <div className="relative w-full aspect-[4/3] bg-cream-alt/40 border border-primary/12 rounded-[2px] overflow-hidden">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-              <div className="w-px h-10 bg-primary/20" />
-              <span className="font-body text-[10px] font-medium tracking-[0.14em] uppercase text-primary/35 text-center px-8">
-                Volunteers Photograph
-              </span>
-            </div>
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-              <div className="bg-primary/[0.06] border border-primary/[0.09] rounded-[2px] px-4 py-1.5">
-                <span className="font-body text-[9px] font-medium tracking-[0.1em] uppercase text-primary/45 whitespace-nowrap">
-                  Volunteers Photograph — Hands at Work
-                </span>
-              </div>
-            </div>
+          <div className="relative w-full aspect-[4/3] bg-cream-alt/40  rounded-[2px] overflow-hidden">
+           <img src="/hands.jpg"  alt="volunteers strecthing their hands" />
           </div>
         </motion.div>
       </div>

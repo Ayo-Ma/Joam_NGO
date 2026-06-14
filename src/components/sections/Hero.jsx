@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.44 }}
             className="flex items-center gap-4 flex-wrap"
           >
-            <Button variant="primary" href="/donate">Donate Now</Button>
+            <Button variant="primary "  href="/donate">Donate Now</Button>
             <Button variant="ghost-dark" href="/programs">See Our Programs</Button>
           </motion.div>
         </div>

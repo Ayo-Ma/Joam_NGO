@@ -208,7 +208,7 @@ function FeaturedPost() {
 
         <motion.div
           {...fadeUp(0.1)}
-          className="grid grid-cols-2 md:grid-cols-1 gap-0 bg-primary rounded-[4px] overflow-hidden"
+          className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-primary rounded-[4px] overflow-hidden"
         >
           {/* Image */}
           <div
@@ -333,7 +333,7 @@ function AllPostsGrid({ posts, activeFilter, setActiveFilter }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mb-10"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-10"
           >
             {posts.map((post, i) => (
               <PostCard key={i} post={post} index={i} />
@@ -453,7 +453,7 @@ function NewsletterSignUp({
       aria-labelledby="newsletter-heading"
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
-      <div className="max-w-container mx-auto grid grid-cols-2 md:grid-cols-1 gap-14 md:gap-10 items-center">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-center">
         {/* Left — copy */}
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -616,7 +616,7 @@ function BlogCTA() {
       <div className="max-w-container mx-auto">
         <motion.div
           {...fadeUp(0)}
-          className="grid grid-cols-2 md:grid-cols-1 gap-12 md:gap-8 items-center
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center
             p-10 sm:p-6 bg-primary rounded-[4px]"
         >
           {/* Left */}

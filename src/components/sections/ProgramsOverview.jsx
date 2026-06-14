@@ -13,7 +13,7 @@ const PROGRAMS = [
     href: "/programs#maternal",
     imageCaption: "Maternal Care",
     reverse: false,
-    imgSrc: "/care.jpg",
+    imgSrc: "/maternalCare.jpg",
   },
   {
     num: "02",
@@ -24,7 +24,7 @@ const PROGRAMS = [
     href: "/programs#scholarships",
     imageCaption: "Student Scholarships",
     reverse: true,
-    imgSrc: "/care.jpg",
+    imgSrc: "/studentinClass.jpg",
   },
   {
     num: "03",
@@ -35,7 +35,7 @@ const PROGRAMS = [
     href: "/programs#elderly",
     imageCaption: "Elderly Care",
     reverse: false,
-    imgSrc: "/care.jpg",
+    imgSrc: "/baba.jpg",
   },
 ];
 

@@ -212,7 +212,7 @@ function UpcomingEvents() {
         </motion.div>
 
         {/* Remaining events — 3 col grid */}
-        <div className="grid grid-cols-3 md:grid-cols-1 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {rest.map((event, i) => (
             <motion.div key={i} {...fadeUp(i * 0.09)}>
               <EventCard event={event} />
@@ -227,7 +227,7 @@ function UpcomingEvents() {
 /* ── Featured Event Card ─────────────────────── */
 function FeaturedEventCard({ event }) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 gap-0 bg-primary rounded-[4px] overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-primary rounded-[4px] overflow-hidden">
       {/* Image */}
       <div
         className="w-full h-[280px] md:h-[180px] bg-primary-mid/60
@@ -475,7 +475,7 @@ function EventsCTA() {
       aria-label="Support the foundation"
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
-      <div className="max-w-container mx-auto grid grid-cols-2 md:grid-cols-1 gap-14 md:gap-8 items-center">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 items-center">
         {/* Left */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="cream">Can't Make It?</Overline>

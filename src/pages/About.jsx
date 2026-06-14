@@ -112,7 +112,7 @@ function JanetStory() {
       aria-labelledby="janet-heading"
       className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
-      <div className="max-w-container mx-auto grid grid-cols-2 md:grid-cols-1 gap-14 md:gap-10 items-start">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-start">
         {/* LEFT — small editorial image */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="gold">Who We Honour</Overline>
@@ -255,7 +255,7 @@ function MissionValues() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-3 md:grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {VALUES.map((v, i) => (
             <motion.div
               key={v.num}
@@ -326,7 +326,7 @@ function Leadership() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {LEADERS.map((leader, i) => (
             <motion.div
               key={leader.name}
@@ -465,7 +465,7 @@ function Timeline() {
             className="absolute top-[10px] left-0 right-0 h-px bg-border origin-left"
           />
 
-          <div className="grid grid-cols-5 gap-5 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-5 relative">
             {MILESTONES.map((m, i) => (
               <motion.div key={i} {...fadeUp(i * 0.08)} className="pt-10">
                 {/* Dot */}
@@ -578,7 +578,7 @@ function TransparencyCommitment() {
       <div className="max-w-container mx-auto">
         <motion.div
           {...fadeUp(0)}
-          className="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-4 items-end mb-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4 items-end mb-10"
         >
           <div>
             <Overline color="gold">How We Operate</Overline>
@@ -596,7 +596,7 @@ function TransparencyCommitment() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {TRANSPARENCY.map((pt, i) => (
             <motion.div
               key={pt.num}

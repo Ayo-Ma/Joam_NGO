@@ -106,20 +106,8 @@ export default function ImpactStory() {
           animate={inView ? "visible" : "hidden"}
           className="hidden lg:block"
         >
-          <div className="relative w-full aspect-[4/3] bg-primary-mid/50 border border-cream-surface/[0.08] rounded-[2px] overflow-hidden">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-              <div className="w-px h-10 bg-cream-surface/15" />
-              <span className="font-body text-[10px] font-medium tracking-[0.14em] uppercase text-cream-surface/30 text-center px-8">
-                Editorial Portrait
-              </span>
-            </div>
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-              <div className="bg-cream-surface/[0.07] border border-cream-surface/[0.08] rounded-[2px] px-4 py-1.5">
-                <span className="font-body text-[9px] font-medium tracking-[0.1em] uppercase text-cream-surface/35 whitespace-nowrap">
-                  Editorial Portrait — Amara &amp; Daughter, Wide
-                </span>
-              </div>
-            </div>
+          <div className="relative w-full aspect-[4/3]  bg-primary-mid/50 border border-cream-surface/[0.08] rounded-[2px] overflow-hidden">
+           <img src="/amara.webp" className="object-fill" alt="editorial portrait of Amara and her daughter" />
           </div>
         </motion.div>
       </div>

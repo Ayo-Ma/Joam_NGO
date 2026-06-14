@@ -10,24 +10,24 @@ import Button from "../components/ui/Button";
  */
 
 const fadeUp = (delay = 0) => ({
-  initial:     { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0  },
-  viewport:    { once: true, margin: "-60px" },
-  transition:  { duration: 0.75, ease: [0.22, 1, 0.36, 1], delay },
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1], delay },
 });
 
 const fadeLeft = (delay = 0) => ({
-  initial:     { opacity: 0, x: -28 },
-  whileInView: { opacity: 1, x: 0   },
-  viewport:    { once: true, margin: "-60px" },
-  transition:  { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
+  initial: { opacity: 0, x: -28 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
 });
 
 const fadeRight = (delay = 0) => ({
-  initial:     { opacity: 0, x: 28 },
-  whileInView: { opacity: 1, x: 0  },
-  viewport:    { once: true, margin: "-60px" },
-  transition:  { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
+  initial: { opacity: 0, x: 28 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
 });
 
 /* ══════════════════════════════════════════════════
@@ -65,7 +65,6 @@ function ProgramsHero() {
       />
 
       <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
-
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,7 +80,8 @@ function ProgramsHero() {
           className="font-display font-bold text-cream-surface leading-[1.08] tracking-[-0.02em]
             text-[clamp(36px,5vw,64px)] max-w-[560px] mb-5"
         >
-          Three Pillars.<br />
+          Three Pillars.
+          <br />
           <em className="italic text-accent">One Promise.</em>
         </motion.h1>
 
@@ -93,8 +93,8 @@ function ProgramsHero() {
         >
           Every programme JOAM runs exists to answer the same question: what
           does a person need to live with dignity? For a mother, it is safe
-          care. For a student, it is a fighting chance. For an elder, it is
-          not being forgotten.
+          care. For a student, it is a fighting chance. For an elder, it is not
+          being forgotten.
         </motion.p>
 
         {/* Programme nav pills */}
@@ -107,7 +107,7 @@ function ProgramsHero() {
           {[
             { label: "Maternal Healthcare", href: "#maternal" },
             { label: "Student Scholarships", href: "#scholarships" },
-            { label: "Elderly Care",         href: "#elderly"      },
+            { label: "Elderly Care", href: "#elderly" },
           ].map((p) => (
             <a
               key={p.label}
@@ -136,7 +136,23 @@ function ProgramsHero() {
 /* ══════════════════════════════════════════════════
    SHARED — Programme Section Layout
 ══════════════════════════════════════════════════ */
-function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, whatWeDo, whoWeServe, donations, storyOverline, storyHeadline, storyPlaceholder, pullQuote, cta, reverse = false, bg = "cream" }) {
+function ProgrammeSection({
+  id,
+  pillar,
+  headline,
+  headlineItalic,
+  subheadline,
+  whatWeDo,
+  whoWeServe,
+  donations,
+  storyOverline,
+  storyHeadline,
+  storyPlaceholder,
+  pullQuote,
+  cta,
+  reverse = false,
+  bg = "cream",
+}) {
   const bgClass = bg === "surface" ? "bg-cream-surface" : "bg-cream";
 
   return (
@@ -146,10 +162,10 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
       className={`${bgClass} py-20 md:py-14 px-16 lg:px-10 sm:px-6`}
     >
       <div className="max-w-container mx-auto">
-
         {/* ── Top: image + core info ─────────────────── */}
-        <div className={`grid grid-cols-2 md:grid-cols-1 gap-14 md:gap-10 items-start mb-14 md:mb-10`}>
-
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-start mb-14 md:mb-10`}
+        >
           {/* Image side */}
           <motion.div
             {...(reverse ? fadeRight(0) : fadeLeft(0))}
@@ -170,7 +186,8 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
               className="font-display font-bold text-ink leading-[1.1] tracking-[-0.015em]
                 text-[clamp(24px,2.8vw,36px)] mb-4"
             >
-              {headline}<br />
+              {headline}
+              <br />
               <em className="not-italic text-primary">{headlineItalic}</em>
             </h2>
 
@@ -205,7 +222,7 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
           <p className="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-muted mb-4">
             What Your Donation Funds
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {donations.map((d, i) => (
               <motion.div
                 key={i}
@@ -230,11 +247,13 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
         {/* ── Impact story ───────────────────────────── */}
         <motion.div
           {...fadeUp(0.1)}
-          className="bg-primary rounded-[4px] p-8 sm:p-6 grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-6 items-center"
+          className="bg-primary rounded-[4px] p-8 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 items-center"
         >
           {/* Story image */}
-          <div className="w-full aspect-[4/3] bg-primary-mid/50 border border-cream-surface/[0.06]
-            rounded-[2px] flex items-center justify-center relative overflow-hidden">
+          <div
+            className="w-full aspect-[4/3] bg-primary-mid/50 border border-cream-surface/[0.06]
+            rounded-[2px] flex items-center justify-center relative overflow-hidden"
+          >
             <div className="flex flex-col items-center gap-2 text-center px-6">
               <div className="w-px h-7 bg-cream-surface/20" />
               <span className="font-body text-[9px] font-medium tracking-[0.12em] uppercase text-cream-surface/22">
@@ -259,8 +278,10 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
 
             {/* Pull quote placeholder */}
             <figure className="border-l-2 border-accent/40 pl-4 mb-6">
-              <blockquote className="font-display italic text-[16px] leading-[1.5]
-                text-cream-surface/75 m-0 mb-2">
+              <blockquote
+                className="font-display italic text-[16px] leading-[1.5]
+                text-cream-surface/75 m-0 mb-2"
+              >
                 "{pullQuote}"
               </blockquote>
               <figcaption className="font-body text-[11px] text-cream-surface/40">
@@ -287,9 +308,12 @@ function ProgrammeSection({ id, pillar, headline, headlineItalic, subheadline, w
 /* Programme image placeholder */
 function ProgrammeImage({ id }) {
   const labels = {
-    maternal:     { top: "Programme Photograph", bottom: "Maternal Healthcare" },
-    scholarships: { top: "Programme Photograph", bottom: "Student Scholarships" },
-    elderly:      { top: "Programme Photograph", bottom: "Elderly Care"        },
+    maternal: { top: "Programme Photograph", bottom: "Maternal Healthcare" },
+    scholarships: {
+      top: "Programme Photograph",
+      bottom: "Student Scholarships",
+    },
+    elderly: { top: "Programme Photograph", bottom: "Elderly Care" },
   };
   const l = labels[id] || labels.maternal;
 
@@ -332,10 +356,20 @@ function MaternalHealthcare() {
       whatWeDo="The JOAM maternal healthcare programme provides free prenatal care, skilled birth attendance, postnatal support, and emergency referral services to mothers in underserved communities. We do not wait for women to find us. We build presence in the places that formal healthcare systems have not reached."
       whoWeServe="Financially disadvantaged pregnant women and new mothers — many of whom would otherwise deliver at home, without skilled support, without a safety net. Women for whom the nearest clinic is hours away or costs more than a month's income."
       donations={[
-        { amount: "₦5,000",  covers: "Prenatal care for one mother for one month" },
-        { amount: "₦15,000", covers: "Full antenatal support through a full-term pregnancy" },
+        {
+          amount: "₦5,000",
+          covers: "Prenatal care for one mother for one month",
+        },
+        {
+          amount: "₦15,000",
+          covers: "Full antenatal support through a full-term pregnancy",
+        },
         { amount: "₦25,000", covers: "Emergency delivery care for one mother" },
-        { amount: "₦50,000", covers: "Postnatal care and support for two mothers and their newborns" },
+        {
+          amount: "₦50,000",
+          covers:
+            "Postnatal care and support for two mothers and their newborns",
+        },
       ]}
       storyOverline="From the Field"
       storyHeadline="She came in alone. She left with a daughter and a community."
@@ -362,10 +396,22 @@ function StudentScholarships() {
       whatWeDo="The JOAM scholarship programme provides full and partial financial support to academically gifted students from low-income households. Coverage includes school fees, textbooks, examination registration, and mentorship from professionals in the student's field of interest. We follow our scholars — we do not fund one term and disappear."
       whoWeServe="Students at primary, secondary, and tertiary level who demonstrate academic ability but face financial barriers that would force them out of education. Selection prioritises students whose families have exhausted every available option."
       donations={[
-        { amount: "₦10,000", covers: "School fees for one student for one term" },
-        { amount: "₦20,000", covers: "Full academic year support at primary level" },
-        { amount: "₦35,000", covers: "Secondary school fees and textbooks for one year" },
-        { amount: "₦75,000", covers: "University support — one semester, fees and materials" },
+        {
+          amount: "₦10,000",
+          covers: "School fees for one student for one term",
+        },
+        {
+          amount: "₦20,000",
+          covers: "Full academic year support at primary level",
+        },
+        {
+          amount: "₦35,000",
+          covers: "Secondary school fees and textbooks for one year",
+        },
+        {
+          amount: "₦75,000",
+          covers: "University support — one semester, fees and materials",
+        },
       ]}
       storyOverline="From the Classroom"
       storyHeadline="He passed every exam. The only thing standing between him and school was ₦[amount]."
@@ -392,10 +438,23 @@ function ElderlyCare() {
       whatWeDo="The JOAM elderly care programme delivers regular healthcare checks, essential food provisions, and consistent human presence to elderly individuals living without adequate family support. We are not running a facility. We are bringing care to people where they already live — in their homes, in their communities, with their dignity intact."
       whoWeServe="Elderly men and women — particularly those without family nearby, living on inadequate income, or managing health conditions without access to consistent medical attention. People the system has stopped counting."
       donations={[
-        { amount: "₦5,000",  covers: "Food provisions for one elder for two weeks" },
-        { amount: "₦15,000", covers: "Monthly food and welfare support for one elder" },
-        { amount: "₦25,000", covers: "Monthly healthcare check and medication for one elder" },
-        { amount: "₦60,000", covers: "Full monthly support — healthcare, food, and welfare — for one elder" },
+        {
+          amount: "₦5,000",
+          covers: "Food provisions for one elder for two weeks",
+        },
+        {
+          amount: "₦15,000",
+          covers: "Monthly food and welfare support for one elder",
+        },
+        {
+          amount: "₦25,000",
+          covers: "Monthly healthcare check and medication for one elder",
+        },
+        {
+          amount: "₦60,000",
+          covers:
+            "Full monthly support — healthcare, food, and welfare — for one elder",
+        },
       ]}
       storyOverline="From the Community"
       storyHeadline="He had not seen a doctor in [X] years. He thought no one was coming."
@@ -440,11 +499,10 @@ function HowWeDeliver() {
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
-
         {/* Header */}
         <motion.div
           {...fadeUp(0)}
-          className="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-5 items-end mb-12 md:mb-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 items-end mb-12 md:mb-8"
         >
           <div>
             <Overline color="cream">Our Methodology</Overline>
@@ -458,14 +516,13 @@ function HowWeDeliver() {
             </h2>
           </div>
           <p className="font-body text-[14px] leading-[1.75] text-cream-surface/55 md:hidden">
-            The difference between aid that works and aid that doesn't is
-            almost always the same thing: presence. We build it into
-            everything we do.
+            The difference between aid that works and aid that doesn't is almost
+            always the same thing: presence. We build it into everything we do.
           </p>
         </motion.div>
 
         {/* Points */}
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {METHODOLOGY.map((m, i) => (
             <motion.div
               key={m.num}
@@ -475,8 +532,10 @@ function HowWeDeliver() {
                 transition-colors duration-250"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-7 h-7 rounded-full bg-accent/15 border border-accent/25
-                  flex items-center justify-center shrink-0">
+                <div
+                  className="w-7 h-7 rounded-full bg-accent/15 border border-accent/25
+                  flex items-center justify-center shrink-0"
+                >
                   <span className="font-display text-[11px] font-bold text-accent leading-none">
                     {m.num}
                   </span>
@@ -508,19 +567,27 @@ function ProgramsCTA() {
       <div className="max-w-container mx-auto">
         <motion.div
           {...fadeUp(0)}
-          className="grid grid-cols-2 md:grid-cols-1 gap-12 md:gap-8 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center"
         >
           {/* Left */}
           <div>
             <Overline color="gold">Every Programme Runs on Generosity</Overline>
-            <h2 className="font-display font-bold text-ink leading-[1.1] tracking-[-0.01em]
-              text-[clamp(24px,3vw,40px)] mb-4">
+            <h2
+              className="font-display font-bold text-ink leading-[1.1] tracking-[-0.01em]
+              text-[clamp(24px,3vw,40px)] mb-4"
+            >
               None of This Happens{" "}
-              <em className="not-italic text-primary">Without People Like You.</em>
+              <em className="not-italic text-primary">
+                Without People Like You.
+              </em>
             </h2>
             <div className="flex gap-3 flex-wrap mt-6">
-              <Button variant="primary" href="/donate">Donate Now</Button>
-              <Button variant="ghost-light" href="/partner">Become a Partner</Button>
+              <Button variant="primary" href="/donate">
+                Donate Now
+              </Button>
+              <Button variant="ghost-light" href="/partner">
+                Become a Partner
+              </Button>
             </div>
           </div>
 

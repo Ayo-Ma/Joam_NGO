@@ -12,7 +12,7 @@ const base =
 
 const variants = {
   primary:
-    "bg-accent hover:bg-accent-hover text-ink border-accent hover:border-accent-hover shadow-btn hover:shadow-btn-hover hover:-translate-y-0.5 px-9 py-4",
+    "bg-accent hover:bg-accent-hover text-cream-surface/70 border-accent hover:border-accent-hover shadow-btn hover:text-ink hover:shadow-btn-hover hover:-translate-y-0.5 px-9 py-4",
   "ghost-dark":
     "bg-transparent text-cream-surface border-cream-surface/30 hover:border-cream-surface/70 hover:bg-cream-surface/10 hover:-translate-y-0.5 px-9 py-4",
   "ghost-light":
