@@ -4,7 +4,7 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Programs Page
+ * JOAM Foundation  Programs Page
  * Sections: Hero → Maternal Healthcare → Student Scholarships →
  *           Elderly Care → How We Deliver → CTA Block
  */
@@ -134,7 +134,7 @@ function ProgramsHero() {
 }
 
 /* ══════════════════════════════════════════════════
-   SHARED — Programme Section Layout
+   SHARED  Programme Section Layout
 ══════════════════════════════════════════════════ */
 function ProgrammeSection({
   id,
@@ -285,7 +285,7 @@ function ProgrammeSection({
                 "{pullQuote}"
               </blockquote>
               <figcaption className="font-body text-[11px] text-cream-surface/40">
-                — [First name], [Location]
+                 [First name], [Location]
               </figcaption>
             </figure>
 
@@ -328,7 +328,7 @@ function ProgrammeImage({ id }) {
           {l.top}
         </span>
         <span className="font-body text-[9px] text-primary/20 tracking-[0.04em]">
-          — {l.bottom}
+           {l.bottom}
         </span>
       </div>
       {/* Watermark number */}
@@ -352,9 +352,9 @@ function MaternalHealthcare() {
       pillar="Pillar One"
       headline="No Mother Faces"
       headlineItalic="Childbirth Alone."
-      subheadline="In Nigeria, preventable complications during childbirth remain one of the leading causes of maternal death — almost always in communities where care is too far, too expensive, or simply absent. We go to where the gaps are."
+      subheadline="In Nigeria, preventable complications during childbirth remain one of the leading causes of maternal death  almost always in communities where care is too far, too expensive, or simply absent. We go to where the gaps are."
       whatWeDo="The JOAM maternal healthcare programme provides free prenatal care, skilled birth attendance, postnatal support, and emergency referral services to mothers in underserved communities. We do not wait for women to find us. We build presence in the places that formal healthcare systems have not reached."
-      whoWeServe="Financially disadvantaged pregnant women and new mothers — many of whom would otherwise deliver at home, without skilled support, without a safety net. Women for whom the nearest clinic is hours away or costs more than a month's income."
+      whoWeServe="Financially disadvantaged pregnant women and new mothers  many of whom would otherwise deliver at home, without skilled support, without a safety net. Women for whom the nearest clinic is hours away or costs more than a month's income."
       donations={[
         {
           amount: "₦5,000",
@@ -374,7 +374,7 @@ function MaternalHealthcare() {
       storyOverline="From the Field"
       storyHeadline="She came in alone. She left with a daughter and a community."
       storyPlaceholder="[Client to provide: first name, location, what she faced, what the foundation provided, what changed. 4–5 sentences maximum. Specific, not sentimental.]"
-      pullQuote="[Direct quote from beneficiary — to be filled]"
+      pullQuote="[Direct quote from beneficiary  to be filled]"
       cta="Support Maternal Care"
       reverse={false}
     />
@@ -392,8 +392,8 @@ function StudentScholarships() {
       pillar="Pillar Two"
       headline="A Student's Future Should Not"
       headlineItalic="Depend on Their Family's Means."
-      subheadline="Across Nigeria, academically gifted students leave school every year — not because they failed, but because their families ran out of money. JOAM scholarships exist to make sure that never happens to a student we can reach."
-      whatWeDo="The JOAM scholarship programme provides full and partial financial support to academically gifted students from low-income households. Coverage includes school fees, textbooks, examination registration, and mentorship from professionals in the student's field of interest. We follow our scholars — we do not fund one term and disappear."
+      subheadline="Across Nigeria, academically gifted students leave school every year  not because they failed, but because their families ran out of money. JOAM scholarships exist to make sure that never happens to a student we can reach."
+      whatWeDo="The JOAM scholarship programme provides full and partial financial support to academically gifted students from low-income households. Coverage includes school fees, textbooks, examination registration, and mentorship from professionals in the student's field of interest. We follow our scholars  we do not fund one term and disappear."
       whoWeServe="Students at primary, secondary, and tertiary level who demonstrate academic ability but face financial barriers that would force them out of education. Selection prioritises students whose families have exhausted every available option."
       donations={[
         {
@@ -410,13 +410,13 @@ function StudentScholarships() {
         },
         {
           amount: "₦75,000",
-          covers: "University support — one semester, fees and materials",
+          covers: "University support  one semester, fees and materials",
         },
       ]}
       storyOverline="From the Classroom"
       storyHeadline="He passed every exam. The only thing standing between him and school was ₦[amount]."
       storyPlaceholder="[Client to provide: first name, level of education, what he was facing, what the scholarship covered, where he is now. 4–5 sentences. Specific.]"
-      pullQuote="[Direct quote from scholar — to be filled]"
+      pullQuote="[Direct quote from scholar  to be filled]"
       cta="Fund a Scholar"
       reverse={true}
     />
@@ -435,8 +435,8 @@ function ElderlyCare() {
       headline="The People Who Built This Country"
       headlineItalic="Deserve Better Than Silence."
       subheadline="Old age should not mean isolation. It should not mean going without food, without medication, without someone who remembers your name. For too many elders in Nigeria, that is exactly what it means. We are here to change that."
-      whatWeDo="The JOAM elderly care programme delivers regular healthcare checks, essential food provisions, and consistent human presence to elderly individuals living without adequate family support. We are not running a facility. We are bringing care to people where they already live — in their homes, in their communities, with their dignity intact."
-      whoWeServe="Elderly men and women — particularly those without family nearby, living on inadequate income, or managing health conditions without access to consistent medical attention. People the system has stopped counting."
+      whatWeDo="The JOAM elderly care programme delivers regular healthcare checks, essential food provisions, and consistent human presence to elderly individuals living without adequate family support. We are not running a facility. We are bringing care to people where they already live  in their homes, in their communities, with their dignity intact."
+      whoWeServe="Elderly men and women  particularly those without family nearby, living on inadequate income, or managing health conditions without access to consistent medical attention. People the system has stopped counting."
       donations={[
         {
           amount: "₦5,000",
@@ -453,13 +453,13 @@ function ElderlyCare() {
         {
           amount: "₦60,000",
           covers:
-            "Full monthly support — healthcare, food, and welfare — for one elder",
+            "Full monthly support  healthcare, food, and welfare  for one elder",
         },
       ]}
       storyOverline="From the Community"
       storyHeadline="He had not seen a doctor in [X] years. He thought no one was coming."
       storyPlaceholder="[Client to provide: first name, location, situation, what the foundation provided, what changed. 4–5 sentences. Honest and direct.]"
-      pullQuote="[Direct quote from beneficiary — to be filled]"
+      pullQuote="[Direct quote from beneficiary  to be filled]"
       cta="Support Elderly Care"
       reverse={false}
     />
@@ -473,22 +473,22 @@ const METHODOLOGY = [
   {
     num: "01",
     headline: "Community-Rooted",
-    body: "Every programme we run is built in partnership with the communities we serve — not designed for them from the outside. We listen before we act. We stay after we start. The people we serve are not recipients. They are the reason we exist.",
+    body: "Every programme we run is built in partnership with the communities we serve  not designed for them from the outside. We listen before we act. We stay after we start. The people we serve are not recipients. They are the reason we exist.",
   },
   {
     num: "02",
     headline: "Long-Term by Design",
-    body: "We do not measure success by the number of one-time interventions we deliver. We measure it by what changes — and whether that change lasts. Our programmes are structured around sustained support, not one-off gestures.",
+    body: "We do not measure success by the number of one-time interventions we deliver. We measure it by what changes  and whether that change lasts. Our programmes are structured around sustained support, not one-off gestures.",
   },
   {
     num: "03",
     headline: "Honest About Outcomes",
-    body: "We document what we do and report what we find — including when something does not work the way we intended. Transparency is not a marketing position for JOAM. It is the only way we know how to operate.",
+    body: "We document what we do and report what we find  including when something does not work the way we intended. Transparency is not a marketing position for JOAM. It is the only way we know how to operate.",
   },
   {
     num: "04",
     headline: "Built to Scale Carefully",
-    body: "We are a new foundation. We will not promise to reach every community in Nigeria by next year. What we will promise is that every community we enter, we enter properly — with the resources, the people, and the commitment to do the work right.",
+    body: "We are a new foundation. We will not promise to reach every community in Nigeria by next year. What we will promise is that every community we enter, we enter properly  with the resources, the people, and the commitment to do the work right.",
   },
 ];
 

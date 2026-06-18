@@ -4,7 +4,7 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Volunteer Page
+ * JOAM Foundation  Volunteer Page
  * Sections: Hero → Why Volunteer → Volunteer Roles →
  *           Sign-Up Form → What Happens Next → CTA Block
  */
@@ -91,7 +91,7 @@ function VolunteerHero() {
         >
           Some people give money. Some people give time. Some people give
           skills. All of it matters. All of it moves this work forward. If you
-          have been looking for a way to be part of something real — this is it.
+          have been looking for a way to be part of something real  this is it.
         </motion.p>
 
         <motion.a
@@ -126,17 +126,17 @@ const REASONS = [
   {
     num: "01",
     headline: "You Will See the Impact Directly.",
-    body: "Volunteering with JOAM puts you inside the work — not reading about it in a newsletter, but present for it. You will meet the mothers, the students, and the elders whose lives are changing because someone showed up. That is not something you can get from writing a cheque.",
+    body: "Volunteering with JOAM puts you inside the work  not reading about it in a newsletter, but present for it. You will meet the mothers, the students, and the elders whose lives are changing because someone showed up. That is not something you can get from writing a cheque.",
   },
   {
     num: "02",
     headline: "You Will Grow in Ways That Matter.",
-    body: "Whether you are a medical professional, a teacher, a communications specialist, or someone with no formal credentials but genuine commitment — volunteering with JOAM will stretch you. You will problem-solve in real conditions, work alongside people whose lives look nothing like yours, and come away knowing something about yourself that you did not know before.",
+    body: "Whether you are a medical professional, a teacher, a communications specialist, or someone with no formal credentials but genuine commitment  volunteering with JOAM will stretch you. You will problem-solve in real conditions, work alongside people whose lives look nothing like yours, and come away knowing something about yourself that you did not know before.",
   },
   {
     num: "03",
     headline: "You Will Be Part of Something That Lasts.",
-    body: "JOAM Foundation is at its beginning. The people who volunteer now are not joining an institution — they are building one. The decisions made, the relationships formed, and the standards set in these early years will define what this foundation becomes. You have the chance to be part of that from the start.",
+    body: "JOAM Foundation is at its beginning. The people who volunteer now are not joining an institution  they are building one. The decisions made, the relationships formed, and the standards set in these early years will define what this foundation becomes. You have the chance to be part of that from the start.",
   },
 ];
 
@@ -165,7 +165,7 @@ function WhyVolunteer() {
           </div>
           <p className="font-body text-[14px] leading-[1.75] text-ink-secondary md:hidden">
             JOAM volunteers are not support staff filling gaps in a system. They
-            are the foundation itself — showing up in communities, building
+            are the foundation itself  showing up in communities, building
             relationships, and making programmes possible that would not exist
             without them.
           </p>
@@ -204,22 +204,22 @@ const ROLES = [
   {
     title: "Field Support Volunteer",
     headline: "Show Up Where It Counts.",
-    body: "Field volunteers work directly alongside our programme teams — supporting maternal care outreach, distributing provisions to elderly beneficiaries, assisting at scholarship events, and serving as a consistent human presence in the communities we serve. Physical availability required. Compassion non-negotiable.",
+    body: "Field volunteers work directly alongside our programme teams  supporting maternal care outreach, distributing provisions to elderly beneficiaries, assisting at scholarship events, and serving as a consistent human presence in the communities we serve. Physical availability required. Compassion non-negotiable.",
     commitment:
-      "[X hours per week / month — to be confirmed by programme team]",
+      "[X hours per week / month  to be confirmed by programme team]",
     tag: "In-Person",
   },
   {
     title: "Administrative Volunteer",
     headline: "Keep the Foundation Running.",
-    body: "Every programme depends on systems, records, and organisation that someone has to build and maintain. Administrative volunteers support the foundation's operations — managing beneficiary records, coordinating communications, supporting reporting, and ensuring the back-end runs as well as the front-line.",
-    commitment: "[X hours per week — flexible]",
+    body: "Every programme depends on systems, records, and organisation that someone has to build and maintain. Administrative volunteers support the foundation's operations  managing beneficiary records, coordinating communications, supporting reporting, and ensuring the back-end runs as well as the front-line.",
+    commitment: "[X hours per week  flexible]",
     tag: "Remote-Friendly",
   },
   {
     title: "Fundraising Volunteer",
     headline: "Help Us Find the People Who Care.",
-    body: "Fundraising volunteers support JOAM's donor outreach — identifying individuals and organisations who align with our mission, supporting event organisation, and helping communicate the foundation's work to new audiences. If you are well-connected, persuasive, and believe in this cause, this role multiplies your impact significantly.",
+    body: "Fundraising volunteers support JOAM's donor outreach  identifying individuals and organisations who align with our mission, supporting event organisation, and helping communicate the foundation's work to new audiences. If you are well-connected, persuasive, and believe in this cause, this role multiplies your impact significantly.",
     commitment: "Project-based and ongoing options available.",
     tag: "Flexible",
   },
@@ -341,7 +341,7 @@ function SignUpForm() {
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
-        {/* LEFT — context */}
+        {/* LEFT  context */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="cream">Apply Now</Overline>
           <h2
@@ -360,7 +360,7 @@ function SignUpForm() {
           <div className="space-y-4">
             {[
               "Every application is read by a real person.",
-              "You will receive a personal response — not an automated reply.",
+              "You will receive a personal response  not an automated reply.",
               "We will tell you exactly where your skills fit.",
             ].map((point, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -393,7 +393,7 @@ function SignUpForm() {
           </div>
         </motion.div>
 
-        {/* RIGHT — form */}
+        {/* RIGHT  form */}
         <motion.div {...fadeRight(0.1)}>
           {submitted ? (
             <ThankYouState />
@@ -537,7 +537,7 @@ function SignUpForm() {
               </motion.button>
 
               <p className="font-body text-[12px] text-cream-surface/38 text-center leading-[1.6]">
-                We read every application. You will hear from us directly — not
+                We read every application. You will hear from us directly  not
                 from an automated system.
               </p>
             </form>
@@ -617,17 +617,17 @@ const STEPS = [
   {
     num: "01",
     headline: "We Review Your Application.",
-    body: "Every submission is read by a member of the JOAM team — not filtered by software. We look at your skills, your availability, and where you might be most useful. This takes [X] business days from submission.",
+    body: "Every submission is read by a member of the JOAM team  not filtered by software. We look at your skills, your availability, and where you might be most useful. This takes [X] business days from submission.",
   },
   {
     num: "02",
     headline: "We Reach Out Directly.",
-    body: "You will receive a personal message — by email or WhatsApp, whichever you prefer — from someone on our team. We will tell you what role we think fits, ask any follow-up questions, and discuss next steps. No form letters. No automated responses.",
+    body: "You will receive a personal message  by email or WhatsApp, whichever you prefer  from someone on our team. We will tell you what role we think fits, ask any follow-up questions, and discuss next steps. No form letters. No automated responses.",
   },
   {
     num: "03",
     headline: "You Get Oriented and Begin.",
-    body: "Before you start, we will give you a clear picture of what your role involves, who you will be working with, and what to expect in the field or remotely. We will not send you in without context — and we will always be reachable when questions come up.",
+    body: "Before you start, we will give you a clear picture of what your role involves, who you will be working with, and what to expect in the field or remotely. We will not send you in without context  and we will always be reachable when questions come up.",
   },
 ];
 
@@ -657,9 +657,9 @@ function WhatHappensNext() {
           </div>
         </motion.div>
 
-        {/* Steps — horizontal connector on desktop */}
+        {/* Steps  horizontal connector on desktop */}
         <div className="relative">
-          {/* Connector line — desktop */}
+          {/* Connector line  desktop */}
           <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
@@ -746,8 +746,8 @@ function VolunteerCTA() {
         <motion.div {...fadeRight(0.1)} className="space-y-4">
           <p className="font-body text-[15px] leading-[1.8] text-cream-surface/60">
             Volunteering is not the only way to be part of this work. If your
-            schedule does not allow it right now — or if you simply want to
-            contribute in a different way — a donation to JOAM Foundation goes
+            schedule does not allow it right now  or if you simply want to
+            contribute in a different way  a donation to JOAM Foundation goes
             directly into the programmes our volunteers are running on the
             ground.
           </p>

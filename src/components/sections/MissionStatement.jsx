@@ -33,7 +33,7 @@ export default function MissionStatement() {
         ref={ref}
         className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
-        {/* Left — Arch image */}
+        {/* Left  Arch image */}
         <motion.div
           variants={fadeLeft}
           initial="hidden"
@@ -44,7 +44,7 @@ export default function MissionStatement() {
 
         </motion.div>
 
-        {/* Right — Copy */}
+        {/* Right  Copy */}
         <div className="flex flex-col">
           <motion.div
             variants={fadeUp}
@@ -77,7 +77,7 @@ export default function MissionStatement() {
             className="font-body text-[15px] leading-[1.85] text-ink-secondary max-w-[460px]"
           >
             The JOAM Foundation exists to close the gaps that leave the
-            vulnerable behind — providing safe maternal care, educational
+            vulnerable behind providing safe maternal care, educational
             opportunity, and compassionate support for the elderly across
             Nigeria.
           </motion.p>

@@ -4,7 +4,7 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Gallery / Media Page
+ * JOAM Foundation  Gallery / Media Page
  * Sections: Hero → Photo Grid → Video Section → Press & Media → CTA Block
  */
 
@@ -40,72 +40,72 @@ const PHOTO_FILTERS = [
 ];
 
 const FILTER_DESCRIPTORS = {
-  All: "Every photograph JOAM has published — field work, events, team, and community.",
+  All: "Every photograph JOAM has published  field work, events, team, and community.",
   "Maternal Care":
-    "Images from our maternal healthcare programme — clinic days, community outreach, and the mothers at the centre of everything we do.",
+    "Images from our maternal healthcare programme  clinic days, community outreach, and the mothers at the centre of everything we do.",
   Scholarships:
-    "Our scholars — in classrooms, at award ceremonies, and in the communities they are going to change.",
+    "Our scholars  in classrooms, at award ceremonies, and in the communities they are going to change.",
   "Elderly Care":
     "The elders we serve. Their faces, their homes, their dignity. This programme exists because someone looked and did not look away.",
   Events:
     "Fundraisers, awareness days, community gatherings, and the moments that bring JOAM's supporters together.",
-  Team: "The people behind the work — our leadership, our field staff, and our volunteers.",
+  Team: "The people behind the work  our leadership, our field staff, and our volunteers.",
 };
 
-/* Placeholder photo grid — varied aspect ratios for visual interest */
+/* Placeholder photo grid  varied aspect ratios for visual interest */
 const PHOTOS = [
   {
     category: "Maternal Care",
     caption:
-      "Maternal Care · Ekiti State — A midwife conducts a prenatal check during JOAM's first community health day.",
+      "Maternal Care · Ekiti State  A midwife conducts a prenatal check during JOAM's first community health day.",
     span: "col-span-2 row-span-2",
   },
   {
     category: "Scholarships",
     caption:
-      "Scholarships · [State] — A scholarship recipient at the award ceremony.",
+      "Scholarships · [State]  A scholarship recipient at the award ceremony.",
     span: "",
   },
   {
     category: "Elderly Care",
     caption:
-      "Elderly Care · [State] — Volunteers deliver food provisions to an elderly beneficiary.",
+      "Elderly Care · [State]  Volunteers deliver food provisions to an elderly beneficiary.",
     span: "",
   },
   {
     category: "Team",
     caption:
-      "Team · [Location] — JOAM field staff preparing for a community outreach day.",
+      "Team · [Location]  JOAM field staff preparing for a community outreach day.",
     span: "",
   },
   {
     category: "Events",
     caption:
-      "Events · [City] — Community members gather for JOAM's first public awareness event.",
+      "Events · [City]  Community members gather for JOAM's first public awareness event.",
     span: "",
   },
   {
     category: "Maternal Care",
     caption:
-      "Maternal Care · [State] — Mothers at the postnatal support circle.",
+      "Maternal Care · [State]  Mothers at the postnatal support circle.",
     span: "",
   },
   {
     category: "Scholarships",
     caption:
-      "Scholarships · [City] — Students receiving their first scholarship letters.",
+      "Scholarships · [City]  Students receiving their first scholarship letters.",
     span: "",
   },
   {
     category: "Elderly Care",
     caption:
-      "Elderly Care · [State] — A healthcare check conducted in a beneficiary's home.",
+      "Elderly Care · [State]  A healthcare check conducted in a beneficiary's home.",
     span: "",
   },
   {
     category: "Team",
     caption:
-      "Team · [Location] — Volunteers at the end of a community outreach day.",
+      "Team · [Location]  Volunteers at the end of a community outreach day.",
     span: "",
   },
 ];
@@ -115,18 +115,18 @@ const VIDEOS = [
     label: "Foundation Story",
     headline: "Jacob Adesina on Why He Built JOAM",
     desc: "In this short film, JOAM founder Jacob Adesina speaks directly about the person this foundation honours, the problem it exists to solve, and what he intends to build. Watch this before anything else.",
-    duration: "[X] minutes — to be filmed",
+    duration: "[X] minutes  to be filmed",
   },
   {
     label: "From the Field",
-    headline: "[Title — to be determined after first programme activity]",
-    desc: "[To be written after first field visit is filmed — real account of what the camera captured, who spoke, what changed. Honest and specific.]",
+    headline: "[Title  to be determined after first programme activity]",
+    desc: "[To be written after first field visit is filmed  real account of what the camera captured, who spoke, what changed. Honest and specific.]",
     duration: "[X] minutes",
   },
   {
     label: "Beneficiary Story",
-    headline: "[First name] — [Programme, State]",
-    desc: "[To be written after first beneficiary agrees to speak on camera — their situation, what JOAM provided, what they want people to know.]",
+    headline: "[First name]  [Programme, State]",
+    desc: "[To be written after first beneficiary agrees to speak on camera  their situation, what JOAM provided, what they want people to know.]",
     duration: "[X] minutes",
   },
 ];
@@ -214,7 +214,7 @@ function GalleryHero() {
           className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           Not stock photography. Not staged moments. Every image on this page
-          was taken in the field — in the communities we serve, with the people
+          was taken in the field  in the communities we serve, with the people
           we serve, doing the work we said we would do. Look closely. This is
           where your donation goes.
         </motion.p>
@@ -505,7 +505,7 @@ function VideoSection() {
             <p className="font-body text-[14px] leading-[1.75] text-ink-secondary md:hidden">
               When our field teams go out, we bring a camera. When our
               beneficiaries are willing to speak, we listen and we record. These
-              are their stories — unscripted, unedited, and entirely real.
+              are their stories  unscripted, unedited, and entirely real.
             </p>
           </div>
         </motion.div>
@@ -517,7 +517,7 @@ function VideoSection() {
         >
           <p className="font-body text-[13px] text-ink-muted text-center">
             Our first field documentary is in production. We are committed to
-            showing this work on camera — not because it makes good content, but
+            showing this work on camera  not because it makes good content, but
             because it makes our accountability visible.{" "}
             <a
               href="/blog"
@@ -765,8 +765,8 @@ function GalleryCTA() {
           <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
             Every photograph on this page represents a programme that ran, a
             person who was served, and a donor who made it possible. The next
-            image we publish — the next mother, the next scholar, the next elder
-            — starts with someone choosing to give today.
+            image we publish  the next mother, the next scholar, the next elder
+             starts with someone choosing to give today.
           </p>
           <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
             You have seen the work. You know it is real. The next step is yours.

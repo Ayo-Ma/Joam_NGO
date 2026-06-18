@@ -4,7 +4,7 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Blog / News Page
+ * JOAM Foundation  Blog / News Page
  * Sections: Hero → Featured Post → All Posts Grid →
  *           Newsletter Sign-Up → CTA Block
  */
@@ -21,7 +21,7 @@ const FEATURED_POST = {
   category: "Foundation News",
   headline: "We Are Here. Here Is What We Are Building.",
   excerpt:
-    "The JOAM Foundation is open. This is our first post — not a press release, not a mission statement, but a direct account of what we are doing, why we are doing it, and what we need from the people who believe in this work. Read it before you give. Read it before you volunteer. We want you to know exactly who you are partnering with.",
+    "The JOAM Foundation is open. This is our first post  not a press release, not a mission statement, but a direct account of what we are doing, why we are doing it, and what we need from the people who believe in this work. Read it before you give. Read it before you volunteer. We want you to know exactly who you are partnering with.",
   date: "[Launch date]",
   readTime: "[X] min read",
 };
@@ -31,7 +31,7 @@ const POSTS = [
     category: "Foundation News",
     headline: "Why We Named It JOAM: The Story Behind the Foundation",
     excerpt:
-      "Every name carries a history. This one carries a person — and a promise that her values would outlast her absence. Jacob Adesina on why he built this, and what he intends to build.",
+      "Every name carries a history. This one carries a person  and a promise that her values would outlast her absence. Jacob Adesina on why he built this, and what he intends to build.",
     date: "[To be filled]",
     readTime: "[X] min",
   },
@@ -40,7 +40,7 @@ const POSTS = [
     headline:
       "What Maternal Care Actually Looks Like in an Underserved Community",
     excerpt:
-      "Not what the textbooks say. What our team saw on the first day in the field — the gaps, the need, and the women who have been waiting longer than they should have had to.",
+      "Not what the textbooks say. What our team saw on the first day in the field  the gaps, the need, and the women who have been waiting longer than they should have had to.",
     date: "[To be filled]",
     readTime: "[X] min",
   },
@@ -58,25 +58,25 @@ const POSTS = [
     headline:
       "Meeting Our First Elderly Beneficiaries: What We Found and What We Promised",
     excerpt:
-      "We went into three communities to assess need before launching the elderly care programme. What we found was not surprising — but it was sobering. This is what we saw.",
+      "We went into three communities to assess need before launching the elderly care programme. What we found was not surprising  but it was sobering. This is what we saw.",
     date: "[To be filled]",
     readTime: "[X] min",
   },
   {
     category: "Foundation News",
     headline:
-      "How JOAM Tracks and Reports Every Naira — Our Transparency Framework",
+      "How JOAM Tracks and Reports Every Naira  Our Transparency Framework",
     excerpt:
-      "We built our accountability system before we built our programmes. This post explains exactly how donations are received, allocated, tracked, and reported — so you never have to wonder.",
+      "We built our accountability system before we built our programmes. This post explains exactly how donations are received, allocated, tracked, and reported  so you never have to wonder.",
     date: "[To be filled]",
     readTime: "[X] min",
   },
   {
     category: "Maternal Health",
     headline:
-      "[First real field story — to be written after first programme activity]",
+      "[First real field story  to be written after first programme activity]",
     excerpt:
-      "[To be filled with real content — first named story from the maternal care programme.]",
+      "[To be filled with real content  first named story from the maternal care programme.]",
     date: "[To be filled]",
     readTime: "[X] min",
   },
@@ -300,7 +300,7 @@ function AllPostsGrid({ posts, activeFilter, setActiveFilter }) {
             </h2>
           </div>
           <p className="font-body text-[14px] leading-[1.7] text-ink-secondary mt-3 max-w-[500px]">
-            Filter by the programme you care about most — or read everything.
+            Filter by the programme you care about most  or read everything.
             Either way, you will always know what this foundation is doing and
             why.
           </p>
@@ -454,7 +454,7 @@ function NewsletterSignUp({
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-center">
-        {/* Left — copy */}
+        {/* Left  copy */}
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -471,7 +471,7 @@ function NewsletterSignUp({
             <em className="italic text-accent">In Your Inbox.</em>
           </h2>
           <p className="font-body text-[14px] leading-[1.78] text-cream-surface/55 max-w-[380px]">
-            We send one email when something worth reporting happens — a
+            We send one email when something worth reporting happens  a
             programme milestone, a beneficiary story, an honest update from the
             field. No newsletters for the sake of newsletters. Only what
             matters.
@@ -499,7 +499,7 @@ function NewsletterSignUp({
           </div>
         </motion.div>
 
-        {/* Right — form */}
+        {/* Right  form */}
         <motion.div
           initial={{ opacity: 0, x: 24 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -654,7 +654,7 @@ function BlogCTA() {
           {/* Right */}
           <div className="space-y-4">
             <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
-              Every story on this blog exists because a programme ran — and
+              Every story on this blog exists because a programme ran  and
               every programme runs because people chose to fund it. If you read
               this far, you already care. The next step is simple.
             </p>

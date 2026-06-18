@@ -4,7 +4,7 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Events Page
+ * JOAM Foundation  Events Page
  * Sections: Hero → Upcoming Events → Past Events → CTA Block
  */
 
@@ -33,39 +33,39 @@ const fadeRight = (delay = 0) => ({
 const UPCOMING_EVENTS = [
   {
     type: "Fundraising Dinner",
-    name: "An Evening for Dignity — JOAM Foundation Launch Gala",
-    date: "[Date — to be confirmed]",
-    location: "[Venue, City — to be confirmed]",
-    desc: "Our inaugural fundraising dinner brings together donors, partners, and community leaders for an evening of conversation, storytelling, and commitment to the foundation's mission. Hear directly from Jacob Adesina on where JOAM is going — and why now is the right time to be part of it.",
+    name: "An Evening for Dignity  JOAM Foundation Launch Gala",
+    date: "[Date  to be confirmed]",
+    location: "[Venue, City  to be confirmed]",
+    desc: "Our inaugural fundraising dinner brings together donors, partners, and community leaders for an evening of conversation, storytelling, and commitment to the foundation's mission. Hear directly from Jacob Adesina on where JOAM is going  and why now is the right time to be part of it.",
     note: "Seats are limited. Reserve yours early.",
     cta: "Reserve My Seat",
     featured: true,
   },
   {
     type: "Community Outreach",
-    name: "Maternal Health Awareness Day — [Location]",
-    date: "[Date — to be confirmed]",
-    location: "[Community, State — to be confirmed]",
-    desc: "A free community health day focused on maternal wellbeing — offering basic prenatal screenings, health education, and information about JOAM's maternal care programme. Open to all expectant and new mothers in the community.",
+    name: "Maternal Health Awareness Day  [Location]",
+    date: "[Date  to be confirmed]",
+    location: "[Community, State  to be confirmed]",
+    desc: "A free community health day focused on maternal wellbeing  offering basic prenatal screenings, health education, and information about JOAM's maternal care programme. Open to all expectant and new mothers in the community.",
     note: "We need 15 volunteers for this event.",
     cta: "RSVP to Attend",
     featured: false,
   },
   {
     type: "Scholarship Ceremony",
-    name: "JOAM Scholarship Awards — [Year] Cohort",
-    date: "[Date — to be confirmed]",
-    location: "[Venue, City — to be confirmed]",
-    desc: "The annual ceremony recognising our scholarship recipients — the students whose academic dedication earned them a place in JOAM's programme. An evening of celebration, testimony, and renewed commitment to education equity.",
+    name: "JOAM Scholarship Awards  [Year] Cohort",
+    date: "[Date  to be confirmed]",
+    location: "[Venue, City  to be confirmed]",
+    desc: "The annual ceremony recognising our scholarship recipients  the students whose academic dedication earned them a place in JOAM's programme. An evening of celebration, testimony, and renewed commitment to education equity.",
     note: "Open to donors, families, and community guests.",
     cta: "RSVP Now",
     featured: false,
   },
   {
     type: "Elderly Care Drive",
-    name: "Community Care Day — [Location]",
-    date: "[Date — to be confirmed]",
-    location: "[Community, State — to be confirmed]",
+    name: "Community Care Day  [Location]",
+    date: "[Date  to be confirmed]",
+    location: "[Community, State  to be confirmed]",
     desc: "A coordinated outreach day where JOAM volunteers deliver food provisions, healthcare checks, and welfare visits to elderly individuals in underserved communities. Join us as a volunteer or as a donor funding the provisions.",
     note: "Volunteer slots available.",
     cta: "Get Involved",
@@ -76,7 +76,7 @@ const UPCOMING_EVENTS = [
 const PAST_EVENTS = [
   {
     type: "Foundation Event",
-    name: "[Past Event Name — to be filled]",
+    name: "[Past Event Name  to be filled]",
     date: "[Date]",
     location: "[Location]",
     summary:
@@ -84,19 +84,19 @@ const PAST_EVENTS = [
   },
   {
     type: "Community Outreach",
-    name: "[Past Outreach Name — to be filled]",
+    name: "[Past Outreach Name  to be filled]",
     date: "[Date]",
     location: "[Location]",
     summary:
-      "[Brief summary of outcomes — number of people reached, provisions distributed, screenings conducted. To be filled.]",
+      "[Brief summary of outcomes  number of people reached, provisions distributed, screenings conducted. To be filled.]",
   },
   {
     type: "Scholarship",
-    name: "[Past Scholarship Event — to be filled]",
+    name: "[Past Scholarship Event  to be filled]",
     date: "[Date]",
     location: "[Location]",
     summary:
-      "[Brief summary of the scholarship event — students recognised, amounts awarded, families present. To be filled.]",
+      "[Brief summary of the scholarship event  students recognised, amounts awarded, families present. To be filled.]",
   },
 ];
 
@@ -157,7 +157,7 @@ function EventsHero() {
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
           className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
-          Every event JOAM hosts is an extension of the mission — a chance to
+          Every event JOAM hosts is an extension of the mission  a chance to
           meet the people behind the programmes, see the work up close, and
           become part of a community that believes dignity is worth showing up
           for.
@@ -200,18 +200,18 @@ function UpcomingEvents() {
             </h2>
             <p className="font-body text-[14px] leading-[1.7] text-ink-secondary max-w-[320px] md:hidden">
               These are the next opportunities to engage with JOAM Foundation in
-              person — as a supporter, a volunteer, a partner, or simply someone
+              person  as a supporter, a volunteer, a partner, or simply someone
               who wants to understand the work better.
             </p>
           </div>
         </motion.div>
 
-        {/* Featured event — full width */}
+        {/* Featured event  full width */}
         <motion.div {...fadeUp(0.1)} className="mb-6">
           <FeaturedEventCard event={featured} />
         </motion.div>
 
-        {/* Remaining events — 3 col grid */}
+        {/* Remaining events  3 col grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {rest.map((event, i) => (
             <motion.div key={i} {...fadeUp(i * 0.09)}>
@@ -388,7 +388,7 @@ function PastEvents() {
           </div>
         </motion.div>
 
-        {/* Empty state — for launch */}
+        {/* Empty state  for launch */}
         <motion.div
           {...fadeUp(0.1)}
           className="mb-8 p-6 bg-cream border border-border rounded-[4px]"
@@ -504,7 +504,7 @@ function EventsCTA() {
         {/* Right */}
         <motion.div {...fadeRight(0.1)} className="space-y-4">
           <p className="font-body text-[15px] leading-[1.8] text-cream-surface/60">
-            Not every supporter can be in the room — and that is completely
+            Not every supporter can be in the room  and that is completely
             fine. A donation to JOAM Foundation goes directly into the
             programmes our volunteers and staff are running on the ground. It
             shows up where it is needed, when it is needed.

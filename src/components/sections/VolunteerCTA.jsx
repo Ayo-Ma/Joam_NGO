@@ -33,7 +33,7 @@ export default function VolunteerCTA() {
         ref={ref}
         className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
-        {/* Left — Copy */}
+        {/* Left  Copy */}
         <div className="flex flex-col">
           <motion.div
             variants={fadeUp}

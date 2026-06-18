@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 /**
- * JOAM Foundation — Donate / Give Page
+ * JOAM Foundation  Donate / Give Page
  * No Navbar. No Footer. Distraction-free conversion environment.
  * Sections: Minimal Header → Headline → Donation Form →
  *           What Your Donation Funds → Trust Signal → Bottom bar
@@ -20,7 +20,7 @@ const AMOUNTS = [
     raw: 5000,
     impact: "Prenatal care for one mother, one month",
     outcome:
-      "A pregnant woman in an underserved community receives her monthly check-up, basic medication, and midwife access — care she could not otherwise afford.",
+      "A pregnant woman in an underserved community receives her monthly check-up, basic medication, and midwife access  care she could not otherwise afford.",
     label: "Maternal Care",
     color: "bg-primary-light",
     img: "Maternal Care · Mother & Child",
@@ -50,7 +50,7 @@ const AMOUNTS = [
     raw: 50000,
     impact: "Emergency delivery care for two mothers",
     outcome:
-      "Two mothers in labour receive skilled birth attendance, equipment, and postnatal follow-up — the difference between a safe delivery and a tragedy.",
+      "Two mothers in labour receive skilled birth attendance, equipment, and postnatal follow-up  the difference between a safe delivery and a tragedy.",
     label: "Maternal Care",
     color: "bg-accent-light",
     img: "Maternal Care · Delivery Room",
@@ -71,7 +71,7 @@ const FUNDING_BREAKDOWN = [
   {
     amount: "₦5,000",
     covers:
-      "One month of prenatal care for a mother in an underserved community — check-ups, basic medication, and midwife access.",
+      "One month of prenatal care for a mother in an underserved community  check-ups, basic medication, and midwife access.",
     tag: "Maternal Care",
     img: "Maternal Care",
   },
@@ -85,28 +85,28 @@ const FUNDING_BREAKDOWN = [
   {
     amount: "₦15,000",
     covers:
-      "A full pregnancy support package — prenatal through to postnatal care — for one mother.",
+      "A full pregnancy support package  prenatal through to postnatal care  for one mother.",
     tag: "Maternal Care",
     img: "Full Antenatal Care",
   },
   {
     amount: "₦25,000",
     covers:
-      "One month of complete support for one elderly person — food provisions, a healthcare visit, and welfare check-in.",
+      "One month of complete support for one elderly person  food provisions, a healthcare visit, and welfare check-in.",
     tag: "Elderly Care",
     img: "Elder Support",
   },
   {
     amount: "₦50,000",
     covers:
-      "Emergency delivery care for two mothers — skilled birth attendance, equipment, and postnatal follow-up.",
+      "Emergency delivery care for two mothers  skilled birth attendance, equipment, and postnatal follow-up.",
     tag: "Maternal Care",
     img: "Emergency Delivery",
   },
   {
     amount: "₦75,000",
     covers:
-      "One semester of university support for a JOAM scholar — fees, textbooks, and mentorship access.",
+      "One semester of university support for a JOAM scholar  fees, textbooks, and mentorship access.",
     tag: "Scholarships",
     img: "University Support",
   },
@@ -155,7 +155,7 @@ export default function Donate() {
             >
               A mother who delivers safely. A student who stays in school. An
               elder who is not forgotten. That is what a donation to JOAM
-              Foundation does — directly, specifically, and without layers in
+              Foundation does  directly, specifically, and without layers in
               between.
             </motion.p>
           </div>
@@ -201,7 +201,7 @@ export default function Donate() {
             {/* Frequency label */}
             <p className="font-body text-[13px] leading-[1.65] text-ink-secondary mb-6 max-w-[420px]">
               {frequency === "monthly"
-                ? "Become a founding monthly supporter — the most powerful thing you can do for a new foundation."
+                ? "Become a founding monthly supporter  the most powerful thing you can do for a new foundation."
                 : "Make a one-time contribution to the programme that needs it most."}
             </p>
 
@@ -467,7 +467,7 @@ export default function Donate() {
               >
                 "I did not build JOAM to raise money. I built it to honour a
                 life and change lives. Every naira that comes through this
-                foundation goes to exactly that — nothing more, nothing less. I
+                foundation goes to exactly that  nothing more, nothing less. I
                 will answer personally for every programme we run."
               </blockquote>
 
@@ -488,7 +488,7 @@ export default function Donate() {
         </section>
       </main>
 
-      {/* ── 6. BOTTOM BAR — no nav links ───────────── */}
+      {/* ── 6. BOTTOM BAR  no nav links ───────────── */}
       <div className="bg-cream border-t border-border py-4 px-16 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto flex items-center justify-between flex-wrap gap-3">
           <p className="font-body text-[12px] text-ink-muted">

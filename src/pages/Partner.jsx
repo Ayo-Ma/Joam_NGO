@@ -4,11 +4,11 @@ import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
 
 /**
- * JOAM Foundation — Partner / Sponsor Page
+ * JOAM Foundation  Partner / Sponsor Page
  * Sections: Hero → Why Partner → Partnership Tiers →
  *           Current Partners → Impact for Partners →
  *           Inquiry Form → CTA Block
- * Fully responsive — mobile-first
+ * Fully responsive  mobile-first
  */
 
 const fadeUp = (delay = 0) => ({
@@ -38,19 +38,19 @@ const WHY_PARTNER = [
     num: "01",
     sdg: "SDG 3 · SDG 4 · SDG 10",
     headline: "Reach That Goes Where Others Don't.",
-    body: "JOAM Foundation builds presence in underserved communities that formal institutions — government agencies, large NGOs, corporate CSR programmes — routinely fail to reach. Our maternal care operates in communities where the nearest government clinic is hours away. Our scholars come from households that have never been touched by a corporate giving programme. If your organisation wants community reach that is genuine rather than cosmetic, this is where it exists.",
+    body: "JOAM Foundation builds presence in underserved communities that formal institutions  government agencies, large NGOs, corporate CSR programmes  routinely fail to reach. Our maternal care operates in communities where the nearest government clinic is hours away. Our scholars come from households that have never been touched by a corporate giving programme. If your organisation wants community reach that is genuine rather than cosmetic, this is where it exists.",
   },
   {
     num: "02",
     sdg: "Accountability",
     headline: "Accountability You Can Report On.",
-    body: "Every partnership with JOAM comes with documented outcomes — programme reports, beneficiary data, field photography, and impact summaries that your organisation can use directly in CSR reporting, grant documentation, and stakeholder communications. We do not ask you to trust us. We give you the evidence to verify us. Every naira of partner funding is tracked, allocated to a specific programme pillar, and reported against at agreed intervals.",
+    body: "Every partnership with JOAM comes with documented outcomes  programme reports, beneficiary data, field photography, and impact summaries that your organisation can use directly in CSR reporting, grant documentation, and stakeholder communications. We do not ask you to trust us. We give you the evidence to verify us. Every naira of partner funding is tracked, allocated to a specific programme pillar, and reported against at agreed intervals.",
   },
   {
     num: "03",
     sdg: "ESG Alignment",
     headline: "Direct Alignment With Global Development Goals.",
-    body: "JOAM's three programme pillars map directly to United Nations Sustainable Development Goals — SDG 3 (Good Health and Well-Being) through maternal and elderly care, SDG 4 (Quality Education) through our scholarship programme, and SDG 10 (Reduced Inequalities) across all three. For organisations with ESG commitments, international reporting obligations, or impact investment mandates, this alignment is not incidental. It is structural.",
+    body: "JOAM's three programme pillars map directly to United Nations Sustainable Development Goals  SDG 3 (Good Health and Well-Being) through maternal and elderly care, SDG 4 (Quality Education) through our scholarship programme, and SDG 10 (Reduced Inequalities) across all three. For organisations with ESG commitments, international reporting obligations, or impact investment mandates, this alignment is not incidental. It is structural.",
   },
 ];
 
@@ -58,9 +58,9 @@ const TIERS = [
   {
     name: "Community Partner",
     level: "Entry Level",
-    commitment: "[₦X — to be confirmed by foundation]",
+    commitment: "[₦X  to be confirmed by foundation]",
     funds:
-      "Direct programme support across one pillar of your choice — maternal care, scholarships, or elderly care — for one programme cycle.",
+      "Direct programme support across one pillar of your choice  maternal care, scholarships, or elderly care  for one programme cycle.",
     includes: [
       "Named acknowledgement on JOAM website and programme materials",
       "End-of-cycle impact report documenting outcomes funded by your contribution",
@@ -71,9 +71,9 @@ const TIERS = [
   {
     name: "Programme Partner",
     level: "Mid-Level",
-    commitment: "[₦X — to be confirmed]",
+    commitment: "[₦X  to be confirmed]",
     funds:
-      "Sustained support across one full programme pillar for a defined period — covering staff costs, beneficiary support, and field operations.",
+      "Sustained support across one full programme pillar for a defined period  covering staff costs, beneficiary support, and field operations.",
     includes: [
       "Everything in Community Partner tier",
       "Quarterly impact updates with beneficiary data and field reports",
@@ -86,14 +86,14 @@ const TIERS = [
   {
     name: "Foundation Partner",
     level: "Institutional",
-    commitment: "[₦X — to be confirmed]",
+    commitment: "[₦X  to be confirmed]",
     funds:
-      "Multi-pillar or multi-cycle support — sustained investment in the foundation's capacity to deliver across all three programme areas.",
+      "Multi-pillar or multi-cycle support  sustained investment in the foundation's capacity to deliver across all three programme areas.",
     includes: [
       "Everything in Programme Partner tier",
       "Dedicated impact reporting tailored to your CSR framework",
       "Co-branding rights on JOAM Foundation communications",
-      "Executive access — direct engagement with JOAM leadership",
+      "Executive access  direct engagement with JOAM leadership",
       "Recognition at JOAM Foundation events as a founding institutional partner",
       "Option to co-design a specific programme aligned with your mission",
     ],
@@ -104,7 +104,7 @@ const IMPACT_BENEFITS = [
   {
     num: "01",
     headline: "Documented Community Impact.",
-    body: "Every programme your organisation funds is documented — in numbers, in photographs, and in the words of the people served. You will have evidence of impact that is specific, credible, and ready to deploy in annual reports, board presentations, and stakeholder communications.",
+    body: "Every programme your organisation funds is documented  in numbers, in photographs, and in the words of the people served. You will have evidence of impact that is specific, credible, and ready to deploy in annual reports, board presentations, and stakeholder communications.",
   },
   {
     num: "02",
@@ -114,7 +114,7 @@ const IMPACT_BENEFITS = [
   {
     num: "03",
     headline: "Genuine Community Access.",
-    body: "JOAM operates in communities that most organisations cannot access independently — without the relationships, the trust, or the field presence to enter meaningfully. A partnership with JOAM gives your organisation a legitimate, established presence in those communities.",
+    body: "JOAM operates in communities that most organisations cannot access independently  without the relationships, the trust, or the field presence to enter meaningfully. A partnership with JOAM gives your organisation a legitimate, established presence in those communities.",
   },
   {
     num: "04",
@@ -124,7 +124,7 @@ const IMPACT_BENEFITS = [
   {
     num: "05",
     headline: "Executive Relationship, Not Just a Transaction.",
-    body: "Programme Partner and Foundation Partner organisations have direct access to JOAM leadership — not account managers, but the people who run the foundation. If something is not working, you tell us directly. If you have an idea, we hear it directly.",
+    body: "Programme Partner and Foundation Partner organisations have direct access to JOAM leadership  not account managers, but the people who run the foundation. If something is not working, you tell us directly. If you have an idea, we hear it directly.",
   },
 ];
 
@@ -143,7 +143,7 @@ const INTEREST_AREAS = [
   "Elderly Care Programme",
   "General Foundation Support",
   "Co-Designed Initiative",
-  "Not Sure Yet — Open to Discussion",
+  "Not Sure Yet  Open to Discussion",
 ];
 
 const BUDGET_RANGES = [
@@ -215,7 +215,7 @@ function PartnerHero() {
           className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[500px] mb-10"
         >
           The JOAM Foundation is looking for organisations whose values align
-          with ours — and who want their resources to produce outcomes they can
+          with ours  and who want their resources to produce outcomes they can
           stand behind, document, and be proud of.
         </motion.p>
 
@@ -227,9 +227,9 @@ function PartnerHero() {
           className="flex gap-3 flex-wrap"
         >
           {[
-            "SDG 3 — Good Health",
-            "SDG 4 — Quality Education",
-            "SDG 10 — Reduced Inequalities",
+            "SDG 3  Good Health",
+            "SDG 4  Quality Education",
+            "SDG 10  Reduced Inequalities",
           ].map((sdg) => (
             <span
               key={sdg}
@@ -278,7 +278,7 @@ function WhyPartner() {
             </h2>
             <p className="font-body text-[14px] leading-[1.75] text-ink-secondary md:hidden">
               We will not waste your time with broad claims. Here is the
-              specific case for partnering with this foundation — in the
+              specific case for partnering with this foundation  in the
               language that matters to institutions that have to account for
               where their money goes.
             </p>
@@ -544,7 +544,7 @@ function ImpactForPartners() {
             </h2>
             <p className="font-body text-[14px] leading-[1.75] text-ink-secondary md:hidden">
               We understand that institutional giving has to justify itself
-              internally — to boards, to shareholders, to ESG committees, to
+              internally  to boards, to shareholders, to ESG committees, to
               grant trustees. Here is what a partnership with JOAM produces for
               the organisations that commit to it.
             </p>
@@ -597,7 +597,7 @@ function InquiryForm() {
       className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
-        {/* LEFT — context */}
+        {/* LEFT  context */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="cream">Start the Conversation</Overline>
           <h2
@@ -617,7 +617,7 @@ function InquiryForm() {
           <div className="space-y-3 mb-8">
             {[
               "Every inquiry is reviewed by Jacob Adesina personally.",
-              "You will receive a specific response — not a brochure.",
+              "You will receive a specific response  not a brochure.",
               "We will propose a partnership structure that fits your objectives.",
             ].map((point, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -661,7 +661,7 @@ function InquiryForm() {
           </div>
         </motion.div>
 
-        {/* RIGHT — form */}
+        {/* RIGHT  form */}
         <motion.div {...fadeRight(0.1)}>
           <AnimatePresence mode="wait">
             {submitted ? (
@@ -904,7 +904,7 @@ function InquirySuccess() {
       </h3>
       <p className="font-body text-[14px] leading-[1.75] text-cream-surface/55 mb-6">
         Your enquiry has been sent directly to Jacob Adesina. You will receive a
-        personal response — not a brochure, not a standard reply — within 2–3
+        personal response  not a brochure, not a standard reply  within 2–3
         business days.
       </p>
       <div className="pt-5 border-t border-cream-surface/[0.07] w-full">
@@ -923,7 +923,7 @@ function InquirySuccess() {
 }
 
 /* ══════════════════════════════════════════════════
-   7. CTA BLOCK — for individual visitors
+   7. CTA BLOCK  for individual visitors
 ══════════════════════════════════════════════════ */
 function PartnerCTA() {
   return (
@@ -973,7 +973,7 @@ function PartnerCTA() {
           {/* Right */}
           <div>
             <p className="font-body text-[15px] leading-[1.8] text-ink-secondary mb-4">
-              This page is built for institutional partners — but the foundation
+              This page is built for institutional partners  but the foundation
               runs on individual donors too. If you are a person rather than an
               organisation, and what you have read here has moved you to act,
               the donate page is one click away.

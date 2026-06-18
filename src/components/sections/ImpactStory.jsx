@@ -33,7 +33,7 @@ export default function ImpactStory() {
         ref={ref}
         className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
-        {/* Left — Story copy */}
+        {/* Left  Story copy */}
         <div className="flex flex-col">
           {/* Tag pill */}
           <motion.div
@@ -73,7 +73,7 @@ export default function ImpactStory() {
           >
             When Amara came to our maternal clinic in labour with no one beside
             her, our midwives stayed through the night. Today she holds a
-            healthy daughter — and a place in our mothers&apos; support circle.
+            healthy daughter  and a place in our mothers&apos; support circle.
           </motion.p>
 
           <motion.p
@@ -99,7 +99,7 @@ export default function ImpactStory() {
           </motion.div>
         </div>
 
-        {/* Right — Image placeholder */}
+        {/* Right  Image placeholder */}
         <motion.div
           variants={fadeRight}
           initial="hidden"

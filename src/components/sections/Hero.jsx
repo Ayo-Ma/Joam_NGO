@@ -27,7 +27,7 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-container-wide mx-auto px-5 sm:px-8 lg:px-16 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        {/* ── LEFT — Copy ───────────────────────────────── */}
+        {/* ── LEFT  Copy ───────────────────────────────── */}
         <div className="flex flex-col">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function Hero() {
             className="font-body text-[16px] leading-[1.8] text-cream-surface/70 max-w-[420px] mb-10"
           >
             In honour of Janet Oluwaremilekun Adesina, we walk alongside
-            Nigeria&apos;s mothers, students, and elders — restoring dignity
+            Nigeria&apos;s mothers, students, and elders  restoring dignity
             through care that lasts.
           </motion.p>
 
@@ -70,7 +70,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* ── RIGHT — Image + floating stat ────────────── */}
+        {/* ── RIGHT  Image + floating stat ────────────── */}
         <motion.div
           initial={{ opacity: 0, x: 36 }}
           animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 36 }}

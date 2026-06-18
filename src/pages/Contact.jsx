@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Overline from "../components/ui/Overline";
 
 /**
- * JOAM Foundation — Contact Page
+ * JOAM Foundation  Contact Page
  * Sections: Hero → Contact Form → Direct Contacts →
  *           Office Location → Response Time Commitment
  */
@@ -49,7 +49,7 @@ const SUBJECTS = [
   {
     value: "beneficiary",
     label: "Beneficiary Support",
-    desc: "If you or someone you know needs help accessing our maternal care, scholarship, or elderly care programmes — tell us here.",
+    desc: "If you or someone you know needs help accessing our maternal care, scholarship, or elderly care programmes  tell us here.",
   },
   {
     value: "partnership",
@@ -67,7 +67,7 @@ const COMMITMENTS = [
   {
     num: "01",
     headline: "Every Message Gets a Personal Response.",
-    body: "No automated replies. No ticketing systems. A real member of the JOAM team reads your message and responds to it — by name, specifically, and with actual information.",
+    body: "No automated replies. No ticketing systems. A real member of the JOAM team reads your message and responds to it  by name, specifically, and with actual information.",
   },
   {
     num: "02",
@@ -77,7 +77,7 @@ const COMMITMENTS = [
   {
     num: "03",
     headline: "Urgent? Use WhatsApp.",
-    body: "For time-sensitive matters — including beneficiary support requests — WhatsApp is the fastest way to reach us. Jacob and Abubakar's numbers are above. They are reachable during working hours.",
+    body: "For time-sensitive matters  including beneficiary support requests  WhatsApp is the fastest way to reach us. Jacob and Abubakar's numbers are above. They are reachable during working hours.",
   },
   {
     num: "04",
@@ -146,7 +146,7 @@ function ContactHero() {
           className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           Whether you want to give, volunteer, partner, seek support, or simply
-          ask a question — there is a real person on the other end of every
+          ask a question  there is a real person on the other end of every
           message sent to this foundation. Reach out. We will respond.
         </motion.p>
 
@@ -176,7 +176,7 @@ function ContactForm() {
       className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
-        {/* LEFT — context */}
+        {/* LEFT  context */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="gold">Get in Touch</Overline>
           <h2
@@ -239,7 +239,7 @@ function ContactForm() {
           </div>
         </motion.div>
 
-        {/* RIGHT — form */}
+        {/* RIGHT  form */}
         <motion.div {...fadeRight(0.1)}>
           <AnimatePresence mode="wait">
             {submitted ? (
@@ -445,7 +445,7 @@ const LEADERS = [
     name: "Jacob Adesina",
     title: "Founder & Executive Director",
     initial: "JA",
-    resp: "Overall foundation strategy, donor relationships, partnerships, and programme oversight. If your question is about where this foundation is going and why — Jacob is the right person.",
+    resp: "Overall foundation strategy, donor relationships, partnerships, and programme oversight. If your question is about where this foundation is going and why  Jacob is the right person.",
     email: "jacobgreat1@gmail.com",
     whatsapp: "+234 809 590 0357",
     waLink: "https://wa.me/2348095900357",
@@ -455,7 +455,7 @@ const LEADERS = [
     name: "Abubakar Abdulbasit",
     title: "Programme Director",
     initial: "AA",
-    resp: "Day-to-day programme delivery across maternal care, scholarships, and elderly support. If your question is about how programmes work, who qualifies, or how to access support — Abubakar is the right person.",
+    resp: "Day-to-day programme delivery across maternal care, scholarships, and elderly support. If your question is about how programmes work, who qualifies, or how to access support  Abubakar is the right person.",
     email: null,
     whatsapp: "+234 816 816 6347",
     waLink: "https://wa.me/2348168166347",
@@ -577,7 +577,7 @@ function DirectContacts() {
             text-center max-w-[520px] mx-auto mt-8"
         >
           We publish direct contact details because transparency is not a policy
-          for JOAM — it is a practice. If you send a message, a person reads it.
+          for JOAM  it is a practice. If you send a message, a person reads it.
           If you ask a question, a person answers it.
         </motion.p>
       </div>
@@ -595,7 +595,7 @@ function OfficeLocation() {
       className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10">
-        {/* LEFT — info */}
+        {/* LEFT  info */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="gold">Where We Are</Overline>
           <h2
@@ -608,7 +608,7 @@ function OfficeLocation() {
 
           <p className="font-body text-[14px] leading-[1.78] text-ink-secondary mb-7">
             JOAM Foundation is based in Nigeria. Our field work spans multiple
-            states — but our doors are open to anyone who wants to visit,
+            states  but our doors are open to anyone who wants to visit,
             verify, or simply see the work in person.
           </p>
 
@@ -620,7 +620,7 @@ function OfficeLocation() {
             <address className="not-italic font-body text-[14px] leading-[1.75] text-ink-secondary">
               JOAM Foundation
               <br />
-              [Full address — to be confirmed by client]
+              [Full address  to be confirmed by client]
               <br />
               Ado-Ekiti, Ekiti State, Nigeria
             </address>
@@ -654,13 +654,13 @@ function OfficeLocation() {
               We welcome donors, partners, and journalists who want to see the
               work firsthand.{" "}
               <span className="font-medium text-primary">
-                Seeing is believing — and we have nothing to hide.
+                Seeing is believing  and we have nothing to hide.
               </span>
             </p>
           </div>
         </motion.div>
 
-        {/* RIGHT — map placeholder */}
+        {/* RIGHT  map placeholder */}
         <motion.div {...fadeRight(0.1)}>
           <div
             className="w-full h-full min-h-[360px] bg-primary-light border border-primary/[0.08]
