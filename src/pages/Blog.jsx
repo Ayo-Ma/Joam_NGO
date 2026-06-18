@@ -174,7 +174,7 @@ function BlogHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[460px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           This is where we report back. No polished press releases, no
           donor-friendly abstractions. Just honest accounts of what we are
@@ -253,7 +253,7 @@ function FeaturedPost() {
                 {FEATURED_POST.headline}
               </h2>
 
-              <p className="font-body text-[14px] leading-[1.78] text-cream-surface/58 mb-8">
+              <p className="font-body text-[14px] leading-[1.78] text-cream-surface/70 mb-8">
                 {FEATURED_POST.excerpt}
               </p>
             </div>
@@ -653,7 +653,7 @@ function BlogCTA() {
 
           {/* Right */}
           <div className="space-y-4">
-            <p className="font-body text-[15px] leading-[1.8] text-cream-surface/58">
+            <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
               Every story on this blog exists because a programme ran — and
               every programme runs because people chose to fund it. If you read
               this far, you already care. The next step is simple.

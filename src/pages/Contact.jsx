@@ -143,7 +143,7 @@ function ContactHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[460px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           Whether you want to give, volunteer, partner, seek support, or simply
           ask a question — there is a real person on the other end of every

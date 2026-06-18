@@ -211,7 +211,7 @@ function GalleryHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[460px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           Not stock photography. Not staged moments. Every image on this page
           was taken in the field — in the communities we serve, with the people
@@ -762,13 +762,13 @@ function GalleryCTA() {
 
         {/* Right */}
         <motion.div {...fadeRight(0.1)} className="space-y-4">
-          <p className="font-body text-[15px] leading-[1.8] text-cream-surface/58">
+          <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
             Every photograph on this page represents a programme that ran, a
             person who was served, and a donor who made it possible. The next
             image we publish — the next mother, the next scholar, the next elder
             — starts with someone choosing to give today.
           </p>
-          <p className="font-body text-[15px] leading-[1.8] text-cream-surface/58">
+          <p className="font-body text-[15px] leading-[1.8] text-cream-surface/70">
             You have seen the work. You know it is real. The next step is yours.
           </p>
           <div className="pt-4 border-t border-cream-surface/[0.07]">

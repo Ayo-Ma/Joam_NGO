@@ -89,7 +89,7 @@ function ProgramsHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[500px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[500px]"
         >
           Every programme JOAM runs exists to answer the same question: what
           does a person need to live with dignity? For a mother, it is safe

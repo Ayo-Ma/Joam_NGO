@@ -155,7 +155,7 @@ function EventsHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[460px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px]"
         >
           Every event JOAM hosts is an extension of the mission — a chance to
           meet the people behind the programmes, see the work up close, and
@@ -268,7 +268,7 @@ function FeaturedEventCard({ event }) {
             {event.name}
           </h3>
 
-          <p className="font-body text-[14px] leading-[1.78] text-cream-surface/58 mb-4">
+          <p className="font-body text-[14px] leading-[1.78] text-cream-surface/70 mb-4">
             {event.desc}
           </p>
 

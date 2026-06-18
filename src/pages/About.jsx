@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
+import { image } from "framer-motion/client";
 
 /**
  * JOAM Foundation — About Us Page
@@ -85,7 +86,7 @@ function AboutHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[480px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[480px]"
         >
           The JOAM Foundation did not begin in a boardroom. It began with a loss
           — and a decision that the life of Janet Oluwaremilekun Adesina would
@@ -133,15 +134,7 @@ function JanetStory() {
               className="w-[220px] md:w-[180px] aspect-[3/4] bg-primary-light border border-primary/[0.1]
                 rounded-[2px] relative overflow-hidden float-left mr-6 mb-2"
             >
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center px-3">
-                <div className="w-px h-6 bg-primary/20" />
-                <span className="font-body text-[9px] font-medium tracking-[0.12em] uppercase text-primary/28">
-                  Photograph
-                </span>
-                <span className="font-body text-[8px] text-primary/18 tracking-[0.04em]">
-                  Janet Oluwaremilekun Adesina
-                </span>
-              </div>
+             <img src="/JOAM LAdy.jpeg" className=" w-100% h-full object-cover" alt="" />
               <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-primary/[0.04] border-t border-primary/[0.05]">
                 <span className="font-body text-[8px] tracking-[0.08em] text-primary/30">
                   In her memory
@@ -291,6 +284,7 @@ const LEADERS = [
     email: "jacobgreat1@gmail.com",
     phone: "08095900357",
     initial: "JA",
+    image: "/jacob.jpeg",
   },
   {
     name: "Abubakar Abdulbasit",
@@ -299,6 +293,7 @@ const LEADERS = [
     email: null,
     phone: "08168166347",
     initial: "AA",
+    image: "/lateef.jpeg",
   },
 ];
 
@@ -336,21 +331,12 @@ function Leadership() {
             >
               {/* Photo area — taller, feels like a real photo slot */}
               <div
-                className="w-full h-[200px] bg-primary-mid/60 border-b border-cream-surface/[0.06]
+                className="w-full  aspect-[4/3] bg-primary-mid/60 border-b border-cream-surface/[0.06]
                 flex flex-col items-center justify-center gap-2 relative"
               >
                 {/* Large monogram */}
-                <div
-                  className="w-20 h-20 rounded-full bg-primary border border-accent/30
-                  flex items-center justify-center"
-                >
-                  <span className="font-display text-[28px] font-bold text-accent leading-none">
-                    {leader.initial}
-                  </span>
-                </div>
-                <span className="font-body text-[9px] font-medium tracking-[0.12em] uppercase text-cream-surface/25">
-                  Photo Placeholder
-                </span>
+              
+               <img src={leader.image} className=" w-full object-top h-full object-cover" alt={leader.name} />
               </div>
 
               {/* Info */}
@@ -364,7 +350,7 @@ function Leadership() {
                   </p>
                 </div>
 
-                <p className="font-body text-[14px] leading-[1.78] text-cream-surface/58 mb-6">
+                <p className="font-body text-[14px] leading-[1.78] text-cream-surface/70 mb-6">
                   {leader.bio}
                 </p>
 
@@ -667,7 +653,7 @@ function AboutCTA() {
 
         <motion.p
           {...fadeUp(0.26)}
-          className="font-body text-[15px] leading-[1.8] text-cream-surface/62
+          className="font-body text-[15px] leading-[1.8] text-cream-surface/70
             mb-8"
         >
           A foundation is only as strong as the people who believe in it early.
