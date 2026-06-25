@@ -178,7 +178,7 @@ function AboutHero() {
             "radial-gradient(ellipse at 75% 30%, rgba(45,106,79,0.38) 0%, transparent 55%)",
         }}
       />
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -228,7 +228,7 @@ function JanetStory() {
   return (
     <section
       aria-labelledby="janet-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-start">
         {/* LEFT — copy + floated editorial image */}
@@ -344,7 +344,7 @@ function MissionValues() {
   return (
     <section
       aria-labelledby="values-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -390,7 +390,7 @@ function Leadership() {
   return (
     <section
       aria-labelledby="leadership-heading"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -530,7 +530,7 @@ function Timeline() {
   return (
     <section
       aria-labelledby="timeline-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6 overflow-hidden"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6 overflow-hidden"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-12">
@@ -652,7 +652,7 @@ function TransparencyCommitment() {
   return (
     <section
       aria-labelledby="transparency-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div
@@ -719,7 +719,7 @@ function AboutCTA() {
   return (
     <section
       aria-label="Support the foundation"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-[600px] mx-auto text-center">
         <motion.div {...fadeUp(0)}>

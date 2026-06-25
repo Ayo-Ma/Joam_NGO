@@ -189,7 +189,7 @@ function PartnerHero() {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -260,7 +260,7 @@ function WhyPartner() {
   return (
     <section
       aria-labelledby="why-partner-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-12 md:mb-8">
@@ -326,7 +326,7 @@ function PartnershipTiers() {
   return (
     <section
       aria-labelledby="tiers-heading"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-12 md:mb-8">
@@ -459,7 +459,7 @@ function CurrentPartners() {
   return (
     <section
       aria-labelledby="partners-heading"
-      className="bg-cream py-16 md:py-12 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-16 md:py-12 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="text-center mb-8">
@@ -526,7 +526,7 @@ function ImpactForPartners() {
   return (
     <section
       aria-labelledby="impact-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -594,7 +594,7 @@ function InquiryForm() {
     <section
       id="inquiry-form"
       aria-labelledby="inquiry-heading"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
         {/* LEFT  context */}
@@ -929,7 +929,7 @@ function PartnerCTA() {
   return (
     <section
       aria-label="Individual giving"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div

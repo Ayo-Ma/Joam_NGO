@@ -187,7 +187,7 @@ function GalleryHero() {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -237,7 +237,7 @@ function PhotoGrid({ photos, activeFilter, setActiveFilter, setLightbox }) {
   return (
     <section
       aria-labelledby="photos-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         {/* Header */}
@@ -488,7 +488,7 @@ function VideoSection() {
   return (
     <section
       aria-labelledby="video-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -613,7 +613,7 @@ function PressMedia() {
   return (
     <section
       aria-labelledby="press-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -722,7 +722,7 @@ function GalleryCTA() {
   return (
     <section
       aria-label="Support the foundation"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 items-center">
         {/* Left */}

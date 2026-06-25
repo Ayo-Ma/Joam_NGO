@@ -49,7 +49,7 @@ export default function EventDetail() {
     <main className="overflow-x-hidden pt-[72px]">
 
       {/* ── HERO ── */}
-      <section className="bg-primary py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-primary py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-8">
@@ -117,7 +117,7 @@ export default function EventDetail() {
       )}
 
       {/* ── CONTENT + SIDEBAR ── */}
-      <section className="bg-cream py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-cream py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-[1fr_280px] gap-16 md:gap-0 items-start">
 
           {/* Body */}
@@ -163,7 +163,7 @@ export default function EventDetail() {
 
       {/* ── GALLERY (past events) ── */}
       {isCompleted && event.gallery?.length > 0 && (
-        <section className="bg-cream-surface py-16 px-16 lg:px-10 sm:px-6">
+        <section className="bg-cream-surface py-16 px-4 lg:px-10 sm:px-6">
           <div className="max-w-container mx-auto">
             <Overline color="gold">Event Gallery</Overline>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-6">
@@ -188,7 +188,7 @@ export default function EventDetail() {
       )}
 
       {/* ── BOTTOM CTA ── */}
-      <section className="bg-primary py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-primary py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container-narrow mx-auto text-center">
           <h2 className="font-display font-bold text-cream-surface leading-[1.1]
             text-[clamp(22px,3vw,36px)] mb-2">
@@ -290,7 +290,7 @@ function EventSidebar({ event, isUpcoming }) {
 function EventDetailSkeleton() {
   return (
     <div className="pt-[72px]">
-      <div className="bg-primary py-16 px-16 lg:px-10 sm:px-6">
+      <div className="bg-primary py-16 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto space-y-4">
           <Skeleton className="h-4 w-24 bg-primary-mid/60" />
           <Skeleton className="h-12 w-3/4 bg-primary-mid/60" />
@@ -299,7 +299,7 @@ function EventDetailSkeleton() {
           </div>
         </div>
       </div>
-      <div className="bg-cream py-16 px-16 lg:px-10 sm:px-6">
+      <div className="bg-cream py-16 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto space-y-3">
           {[1,2,3,4,5].map(i => (
             <Skeleton key={i} className="h-4" style={{ width: `${70 + Math.random() * 30}%` }} />

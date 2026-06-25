@@ -139,7 +139,7 @@ export default function Donate() {
         {/* ── 2. HEADLINE ────────────────────────────── */}
         <section
           aria-label="Page headline"
-          className="bg-cream pt-16 pb-12 md:pt-12 md:pb-8 px-16 lg:px-10 sm:px-6"
+          className="bg-cream pt-16 pb-12 md:pt-12 md:pb-8 px-4 lg:px-10 sm:px-6"
         >
           <div className="max-w-[640px] mx-auto text-center">
             <motion.h1
@@ -166,7 +166,7 @@ export default function Donate() {
         <section
           id="donation-form"
           aria-label="Donation form"
-          className="bg-cream pb-16 md:pb-12 px-16 lg:px-10 sm:px-6"
+          className="bg-cream pb-16 md:pb-12 px-4 lg:px-10 sm:px-6"
         >
           <motion.div
             {...fadeUp(0.1)}
@@ -321,7 +321,7 @@ export default function Donate() {
         {/* ── 5. TRUST SIGNAL ────────────────────────── */}
         <section
           aria-label="Why this foundation"
-          className="bg-green-900 py-16 md:py-12 px-16 lg:px-10 sm:px-6"
+          className="bg-green-900 py-16 md:py-12 px-4 lg:px-10 sm:px-6"
         >
           <div className="max-w-[640px] mx-auto">
             <motion.div
@@ -386,7 +386,7 @@ export default function Donate() {
       </main>
 
       {/* ── 6. BOTTOM BAR  no nav links ───────────── */}
-      <div className="bg-cream border-t border-border py-4 px-16 lg:px-10 sm:px-6">
+      <div className="bg-cream border-t border-border py-4 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto flex items-center justify-between flex-wrap gap-3">
           <p className="font-body text-[12px] text-ink-muted">
             © 2026 JOAM Foundation. All rights reserved.
@@ -416,7 +416,7 @@ export default function Donate() {
 ══════════════════════════════════════════════════ */
 function MinimalHeader() {
   return (
-    <header className="bg-cream border-b justify-between border-border h-[64px] flex items-center px-16 lg:px-10 sm:px-6">
+    <header className="bg-cream border-b justify-between border-border h-[64px] flex items-center px-4 lg:px-10 sm:px-6">
       <a href="/" className="font-body text-[14px] text-ink hover:text-ink/70 no-underline hover:text-yellow-500">
         ← Back
       </a>

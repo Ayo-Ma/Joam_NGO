@@ -125,7 +125,7 @@ function ProgramsHero() {
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none"
         style={{ background: "radial-gradient(ellipse at 70% 40%, rgba(45,106,79,0.38) 0%, transparent 55%)" }} />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
           <Overline color="cream">Our Work</Overline>
@@ -180,7 +180,7 @@ function ProgrammeSection({ prog, sanityData, loading, bg }) {
 
   return (
     <section id={prog.id} aria-labelledby={`${prog.id}-heading`}
-      className={`${bgClass} py-20 md:py-14 px-16 lg:px-10 sm:px-6`}>
+      className={`${bgClass} py-20 md:py-14 px-4 lg:px-10 sm:px-6`}>
       <div className="max-w-container mx-auto">
 
         {/* Image + copy */}
@@ -287,7 +287,7 @@ function ProgrammeSection({ prog, sanityData, loading, bg }) {
 /* ── How We Deliver ────────────────────────────────────────── */
 function HowWeDeliver() {
   return (
-    <section className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)}
           className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 items-end mb-12 md:mb-8">
@@ -331,7 +331,7 @@ function HowWeDeliver() {
 /* ── CTA ───────────────────────────────────────────────────── */
 function ProgramsCTA() {
   return (
-    <section className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center

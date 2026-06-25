@@ -64,7 +64,7 @@ function VolunteerHero() {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-2 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -144,7 +144,7 @@ function WhyVolunteer() {
   return (
     <section
       aria-labelledby="why-volunteer-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         {/* Header */}
@@ -236,7 +236,7 @@ function VolunteerRoles() {
   return (
     <section
       aria-labelledby="roles-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -338,7 +338,7 @@ function SignUpForm() {
     <section
       id="signup-form"
       aria-labelledby="form-heading"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
         {/* LEFT  context */}
@@ -635,7 +635,7 @@ function WhatHappensNext() {
   return (
     <section
       aria-labelledby="next-steps-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-12 md:mb-8">
@@ -714,7 +714,7 @@ function VolunteerCTA() {
   return (
     <section
       aria-label="Another way to give"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 items-center">
         {/* Left */}

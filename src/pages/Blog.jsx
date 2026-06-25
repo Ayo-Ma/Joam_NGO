@@ -62,7 +62,7 @@ export default function Blog() {
               "radial-gradient(ellipse at 65% 35%, rgba(45,106,79,0.38) 0%, transparent 55%)",
           }}
         />
-        <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+        <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
@@ -111,7 +111,7 @@ export default function Blog() {
       </section>
 
       {/* ── FEATURED POST ── */}
-      <section className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+      <section className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto">
           <motion.div {...fadeUp(0)} className="mb-6">
             <Overline color="gold">Latest from JOAM</Overline>
@@ -193,7 +193,7 @@ export default function Blog() {
       </section>
 
       {/* ── ALL POSTS ── */}
-      <section className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+      <section className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto">
           <motion.div {...fadeUp(0)} className="mb-10">
             <Overline color="gold">All Stories</Overline>
@@ -267,7 +267,7 @@ export default function Blog() {
       </section>
 
       {/* ── NEWSLETTER ── */}
-      <section className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+      <section className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-center">
           <div>
             <Overline color="cream">Stay Close to the Work</Overline>
@@ -345,7 +345,7 @@ export default function Blog() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+      <section className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto">
           <motion.div
             {...fadeUp(0)}

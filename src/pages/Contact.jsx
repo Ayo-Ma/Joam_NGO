@@ -119,7 +119,7 @@ function ContactHero() {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ function ContactForm() {
   return (
     <section
       aria-labelledby="form-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10">
         {/* LEFT  context */}
@@ -468,7 +468,7 @@ function DirectContacts() {
   return (
     <section
       aria-labelledby="contacts-heading"
-      className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
@@ -592,7 +592,7 @@ function OfficeLocation() {
   return (
     <section
       aria-labelledby="location-heading"
-      className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10">
         {/* LEFT  info */}
@@ -706,7 +706,7 @@ function ResponseCommitment() {
   return (
     <section
       aria-labelledby="commitment-heading"
-      className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
+      className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-12 md:mb-8">

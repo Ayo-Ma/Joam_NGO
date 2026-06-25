@@ -114,7 +114,7 @@ function EventsHero({ view, setView }) {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
+      <div className="relative z-10 max-w-container mx-auto px-4 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -186,7 +186,7 @@ function EventsHero({ view, setView }) {
 /* ── Upcoming Events ─────────────────── */
 function UpcomingEvents({ featured, rest, loading }) {
   return (
-    <section className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
           <Overline color="gold">Upcoming Events</Overline>
@@ -415,7 +415,7 @@ function EventCard({ event }) {
 /* ── Past Events ─────────────────────── */
 function PastEvents({ past, loading }) {
   return (
-    <section className="bg-cream-surface py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-cream-surface py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
           <Overline color="gold">Past Events</Overline>
@@ -564,7 +564,7 @@ function CalendarView({ events, loading }) {
   });
 
   return (
-    <section className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-cream py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto">
         <motion.div {...fadeUp(0)} className="mb-10">
           <Overline color="gold">Event Calendar</Overline>
@@ -689,7 +689,7 @@ function CalendarView({ events, loading }) {
 /* ── CTA ─────────────────────────────── */
 function EventsCTA() {
   return (
-    <section className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6">
+    <section className="bg-primary py-20 md:py-14 px-4 lg:px-10 sm:px-6">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, x: -24 }}

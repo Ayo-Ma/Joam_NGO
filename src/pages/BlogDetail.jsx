@@ -27,7 +27,7 @@ export default function BlogDetail() {
   return (
     <main className="overflow-x-hidden pt-[72px]">
       {/* ── HERO ── */}
-      <section className="bg-primary py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-primary py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-8">
@@ -122,7 +122,7 @@ export default function BlogDetail() {
       )}
 
       {/* ── BODY ── */}
-      <section className="bg-cream py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-cream py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-[1fr_280px] gap-16 md:gap-0 items-start">
           {/* Article body */}
           <motion.div
@@ -151,7 +151,7 @@ export default function BlogDetail() {
       </div>
 
       {/* ── END OF POST CTA ── */}
-      <section className="bg-primary py-16 md:py-12 px-16 lg:px-10 sm:px-6">
+      <section className="bg-primary py-16 md:py-12 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container-narrow mx-auto text-center">
           <Overline color="cream" centered>
             If This Story Moved You
@@ -189,7 +189,7 @@ export default function BlogDetail() {
 
       {/* ── RELATED POSTS ── */}
       {post.relatedPosts?.length > 0 && (
-        <section className="bg-cream-surface py-16 px-16 lg:px-10 sm:px-6">
+        <section className="bg-cream-surface py-16 px-4 lg:px-10 sm:px-6">
           <div className="max-w-container mx-auto">
             <Overline color="gold">Read Next</Overline>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-6">
@@ -308,14 +308,14 @@ function ShareBlock({ title }) {
 function BlogDetailSkeleton() {
   return (
     <div className="pt-[72px]">
-      <div className="bg-primary py-16 px-16 lg:px-10 sm:px-6">
+      <div className="bg-primary py-16 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto space-y-4">
           <div className="h-4 w-24 bg-primary-mid/60 rounded animate-pulse" />
           <div className="h-12 w-3/4 bg-primary-mid/60 rounded animate-pulse" />
           <div className="h-4 w-40 bg-primary-mid/60 rounded animate-pulse" />
         </div>
       </div>
-      <div className="bg-cream py-16 px-16 lg:px-10 sm:px-6">
+      <div className="bg-cream py-16 px-4 lg:px-10 sm:px-6">
         <div className="max-w-container mx-auto space-y-4">
           {[1, 2, 3, 4, 5].map((i) => (
             <div
