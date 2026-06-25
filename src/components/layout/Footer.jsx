@@ -4,15 +4,15 @@ const FOUNDATION_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Our Programs", href: "/programs" },
   { label: "Events", href: "/events" },
-  { label: "Partners", href: "/partner" },
+  // { label: "Partners", href: "/partner" },
   { label: "Blog", href: "/blog" },
 ];
 
 const GET_INVOLVED_LINKS = [
   { label: "Donate", href: "/donate" },
   { label: "Volunteer", href: "/volunteer" },
-  { label: "Become a Partner", href: "/partner" },
-  { label: "Gallery", href: "/gallery" },
+  // { label: "Become a Partner", href: "/partner" },
+  // { label: "Gallery", href: "/gallery" },
 ];
 
 const SOCIAL = [

@@ -1,12 +1,8 @@
+/* eslint-disable no-unused-vars */
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Overline from "../components/ui/Overline";
 import Button from "../components/ui/Button";
-import { image } from "framer-motion/client";
-
-/**
- * JOAM Foundation  About Us Page
- * Tighter layout, normal font sizes, editorial image treatment
- */
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
@@ -29,6 +25,110 @@ const fadeRight = (delay = 0) => ({
   transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
 });
 
+/* ── YOUR LEADERS — unchanged from your file ── */
+const LEADERS = [
+  {
+    name: "Jacob Olaoluwa Adesina",
+    title: "Founder & Executive Director",
+    photo: "/jacob.jpg",
+    initial: "JA",
+    bio: "Jacob Olaoluwa Adesina is the Founder and Executive Director of the JOAM Foundation, an organization dedicated to advancing maternal health, expanding educational access, and supporting elderly care in underserved communities. The Foundation upholds the enduring legacy of compassion, dignity, and service exemplified by his late mother, Mrs. Janet Oluwaremilekun Adesina. As her only surviving child, he has long been committed to preserving and advancing her lifelong dedication to helping vulnerable populations. A trained historian who has led many organisations in different capacities, Jacob brings a thoughtful and disciplined perspective to his leadership, guided by a deep sense of responsibility and service.",
+    email: "jacobgreat1@gmail.com",
+    phone: "08095900357",
+  },
+  {
+    name: "Abubakar Abdulbasit",
+    title: "Programme Director",
+    photo: "/abubakar.jpeg",
+    initial: "AA",
+    bio: "Abubakar Abdulbasit leads the design and delivery of JOAM's three programme pillars — maternal healthcare, student scholarships, and elderly care. He ensures that what the foundation promises in its communications is what actually happens on the ground. [Additional background to be filled by Abubakar.]",
+    email: null,
+    phone: "08168166347",
+  },
+  // Add more leaders below:
+  // {
+  //   name:    "Full Name",
+  //   title:   "Title / Role",
+  //   photo:   "/photo.jpeg",
+  //   initial: "XX",
+  //   bio:     "Bio text here.",
+  //   email:   "email@example.com",
+  //   phone:   "0800000000",
+  // },
+];
+
+/* ── YOUR MILESTONES — unchanged from your file ── */
+const MILESTONES = [
+  {
+    year: "1996",
+    label: "The Loss",
+    body: "Mrs. Janet Oluwaremilekun Adesina passed away on September 24, 1996, due to postnatal complications — the very kind of preventable tragedy this foundation now exists to stop.",
+  },
+  {
+    year: "2001–2021",
+    label: "Informal Initiatives",
+    body: "For more than 5 consecutive years, Jacob carried out informal initiatives in his mother's honour — laying the groundwork for what would become a formal foundation.",
+  },
+  {
+    year: "[Year]",
+    label: "Foundation Registered",
+    body: "JOAM Foundation formally established with three programme pillars: maternal healthcare, scholarships, and elderly care.",
+  },
+  {
+    year: "2026",
+    label: "Website Launch",
+    body: "JOAM goes online — open to donors, partners, and communities across Nigeria and the diaspora.",
+  },
+];
+
+/* ── YOUR TRANSPARENCY — unchanged from your file ── */
+const TRANSPARENCY = [
+  {
+    num: "01",
+    headline: "Every Naira Is Tracked.",
+    body: "All donations are received into a dedicated foundation account. No personal accounts. No informal transfers. Every inflow is recorded against the programme it was allocated to.",
+  },
+  {
+    num: "02",
+    headline: "Every Programme Is Documented.",
+    body: "Our field teams document every beneficiary interaction — anonymised where necessary, detailed enough to be meaningful. Impact reports are available to every donor on request.",
+  },
+  {
+    num: "03",
+    headline: "Every Donor Deserves an Update.",
+    body: "When you give to JOAM, you will hear from us — not with a generic newsletter, but with a specific account of what your contribution made possible. That is a commitment, not a courtesy.",
+  },
+  {
+    num: "04",
+    headline: "Our Leadership Is Contactable.",
+    body: "Jacob Adesina and Abubakar Abdulbasit are reachable by email and WhatsApp. If you have a question about how this foundation operates, ask it directly. We will answer.",
+    link: { label: "Contact Us", href: "/contact" },
+  },
+];
+
+const VALUES = [
+  {
+    num: "01",
+    headline: "Dignity is Non-Negotiable.",
+    body: "We do not believe in charity that diminishes. Every person we serve — every mother, student, and elder — is treated as a full human being with full rights. Our programmes are built around that conviction, not the convenience of the giver.",
+  },
+  {
+    num: "02",
+    headline: "Presence Over Promises.",
+    body: "Anyone can make a commitment from a distance. We believe in showing up — physically, consistently, and without condition. Our work happens in communities, not in offices. That is the only way to do it right.",
+  },
+  {
+    num: "03",
+    headline: "Transparency is the Foundation of Trust.",
+    body: "We are a new organisation asking people to believe in something they cannot yet see fully. Every naira we receive is tracked, every programme is documented, and every donor deserves to know exactly what their support made possible.",
+  },
+];
+
+const BIO_LIMIT = 200;
+
+/* ══════════════════════════════════════════════════
+   PAGE
+══════════════════════════════════════════════════ */
 export default function About() {
   return (
     <main className="overflow-x-hidden">
@@ -43,9 +143,9 @@ export default function About() {
   );
 }
 
-/* ══════════════════════════════════════════
+/* ══════════════════════════════════════════════════
    1. HERO
-══════════════════════════════════════════ */
+══════════════════════════════════════════════════ */
 function AboutHero() {
   return (
     <section
@@ -60,7 +160,6 @@ function AboutHero() {
             "radial-gradient(ellipse at 75% 30%, rgba(45,106,79,0.38) 0%, transparent 55%)",
         }}
       />
-
       <div className="relative z-10 max-w-container mx-auto px-16 lg:px-10 sm:px-6 py-20 md:py-14">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -86,10 +185,10 @@ function AboutHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[480px]"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/80 max-w-[480px]"
         >
           The JOAM Foundation did not begin in a boardroom. It began with a loss
-           and a decision that the life of Janet Oluwaremilekun Adesina would
+          — and a decision that the life of Janet Oluwaremilekun Adesina would
           mean something long after she was gone.
         </motion.p>
 
@@ -104,9 +203,9 @@ function AboutHero() {
   );
 }
 
-/* ══════════════════════════════════════════
+/* ══════════════════════════════════════════════════
    2. JANET'S STORY
-══════════════════════════════════════════ */
+══════════════════════════════════════════════════ */
 function JanetStory() {
   return (
     <section
@@ -114,7 +213,7 @@ function JanetStory() {
       className="bg-cream py-20 md:py-14 px-16 lg:px-10 sm:px-6"
     >
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-start">
-        {/* LEFT  small editorial image */}
+        {/* LEFT — copy + floated editorial image */}
         <motion.div {...fadeLeft(0)}>
           <Overline color="gold">Who We Honour</Overline>
 
@@ -128,45 +227,57 @@ function JanetStory() {
             <em className="not-italic text-primary">We carry it forward.</em>
           </h2>
 
-          {/* Editorial image  contained, not full-column */}
-          <div className="mb-7">
+          <div className="mb-4">
+            {/* Small portrait floated left — text wraps around */}
             <div
-              className="w-[220px] md:w-[180px] aspect-[3/4] bg-primary-light border border-primary/[0.1]
-                rounded-[2px] relative overflow-hidden float-left mr-6 mb-2"
+              className="w-[160px] sm:w-[130px] aspect-[3/4] float-left mr-5 mb-2
+              bg-primary-light border border-primary/[0.1] rounded-[2px] overflow-hidden relative shrink-0"
             >
-             <img src="/JOAM LAdy.jpeg" className=" w-100% h-full object-cover" alt="" />
-              <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-primary/[0.04] border-t border-primary/[0.05]">
-                <span className="font-body text-[8px] tracking-[0.08em] text-primary/30">
+              <img
+                src="/JOAM LAdy.jpeg"
+                alt="Mrs. Janet Oluwaremilekun Adesina"
+                className="w-full h-full object-cover object-top"
+              />
+              <div
+                className="absolute bottom-0 left-0 right-0 px-2 py-1.5
+                bg-primary/[0.05] border-t border-primary/[0.05]"
+              >
+                <span className="font-body text-[8px] tracking-[0.06em] text-primary/35 block">
                   In her memory
                 </span>
               </div>
             </div>
 
             <p className="font-body text-[15px] leading-[1.8] text-ink-secondary">
-              Janet Oluwaremilekun Adesina was [relationship to founder]. She
-              spent her life [what she did / how she served / what she
-              believed]. She believed that [her core conviction about people,
-              dignity, or care].
+              Mrs. Janet Oluwaremilekun Adesina was the mother of Jacob Olaoluwa
+              Adesina, the Foundation's founder. She devoted her life to
+              supporting underserved communities — women facing maternal health
+              challenges, economically disadvantaged students, and elderly
+              individuals in need of care. She believed that every person,
+              regardless of their circumstances, deserved dignity and the
+              opportunity to live well.
             </p>
             <p className="font-body text-[15px] leading-[1.8] text-ink-secondary mt-4 clear-left">
-              When she passed, [founder's name] faced the kind of grief that
-              either breaks a person or builds something. He chose to build.
+              On September 24, 1996, she passed away due to postnatal
+              complications — the very kind of preventable tragedy this
+              foundation now exists to stop. Jacob, her only surviving child,
+              faced the kind of grief that either breaks a person or builds
+              something. He chose to build.
             </p>
             <p className="font-body text-[15px] leading-[1.8] text-ink-secondary mt-4">
-              The JOAM Foundation exists because one person's life was too
-              meaningful to be mourned quietly. Every mother we support, every
-              student we keep in school, every elder we sit with  that is
+              As the foundation marks 30 years since her passing, JOAM exists to
+              institutionalise her values. Every mother we support, every
+              student we keep in school, every elder we sit with — that is
               Janet, still present. Still caring. Still showing up.
             </p>
           </div>
         </motion.div>
 
-        {/* RIGHT  pull quote + context */}
-        <motion.div {...fadeRight(0.12)} className="pt-12 md:pt-0">
-          {/* Large pull quote */}
-          <figure className="border-l-[2px] border-accent pl-6 mb-10">
+        {/* RIGHT — pull quote + name card */}
+        <motion.div {...fadeRight(0.12)} className="pt-10 md:pt-0">
+          <figure className="border-l-[2px] border-accent pl-6 mb-8">
             <blockquote
-              className="font-display italic text-[clamp(18px,2vw,24px)]
+              className="font-display italic text-[clamp(17px,2vw,23px)]
               leading-[1.45] text-ink font-normal m-0 mb-4"
             >
               "We did not build this foundation to remember her. We built it to
@@ -187,7 +298,6 @@ function JanetStory() {
             </figcaption>
           </figure>
 
-          {/* Foundation name card */}
           <div className="p-6 bg-primary-light border border-primary/[0.08] rounded-[4px]">
             <p className="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-accent mb-2">
               Full Name
@@ -199,7 +309,7 @@ function JanetStory() {
             </p>
             <p className="font-body text-[13px] leading-[1.7] text-ink-secondary">
               Named in honour of a life that embodied the values this foundation
-              now carries  compassion, presence, and the belief that every
+              now carries — compassion, presence, and the belief that every
               person deserves care.
             </p>
           </div>
@@ -209,27 +319,9 @@ function JanetStory() {
   );
 }
 
-/* ══════════════════════════════════════════
+/* ══════════════════════════════════════════════════
    3. MISSION & VALUES
-══════════════════════════════════════════ */
-const VALUES = [
-  {
-    num: "01",
-    headline: "Dignity is Non-Negotiable.",
-    body: "We do not believe in charity that diminishes. Every person we serve  every mother, student, and elder  is treated as a full human being with full rights. Our programmes are built around that conviction, not the convenience of the giver.",
-  },
-  {
-    num: "02",
-    headline: "Presence Over Promises.",
-    body: "Anyone can make a commitment from a distance. We believe in showing up  physically, consistently, and without condition. Our work happens in communities, not in offices. That is the only way to do it right.",
-  },
-  {
-    num: "03",
-    headline: "Transparency is the Foundation of Trust.",
-    body: "We are a new organisation asking people to believe in something they cannot yet see fully. Every naira we receive is tracked, every programme is documented, and every donor deserves to know exactly what their support made possible.",
-  },
-];
-
+══════════════════════════════════════════════════ */
 function MissionValues() {
   return (
     <section
@@ -248,7 +340,7 @@ function MissionValues() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {VALUES.map((v, i) => (
             <motion.div
               key={v.num}
@@ -273,30 +365,9 @@ function MissionValues() {
   );
 }
 
-/* ══════════════════════════════════════════
-   4. LEADERSHIP
-══════════════════════════════════════════ */
-const LEADERS = [
-  {
-    name: "Jacob Adesina",
-    title: "Founder & Executive Director",
-    bio: "Jacob Adesina founded JOAM in honour of [Janet's relationship  to be confirmed]. He brings [professional background] to the work of building an organisation that is as accountable as it is compassionate. His conviction: that the people most overlooked by systems deserve the most deliberate attention. Jacob oversees strategy, partnerships, and programme delivery.",
-    email: "jacobgreat1@gmail.com",
-    phone: "08095900357",
-    initial: "JA",
-    image: "/jacob.jpeg",
-  },
-  {
-    name: "Abubakar Abdulbasit",
-    title: "Programme Director",
-    bio: "Abubakar Abdulbasit leads the design and delivery of JOAM's three programme pillars  maternal healthcare, student scholarships, and elderly care. He ensures that what the foundation promises in its communications is what actually happens on the ground. [Additional background to be filled by client.]",
-    email: null,
-    phone: "08168166347",
-    initial: "AA",
-    image: "/lateef.jpeg",
-  },
-];
-
+/* ══════════════════════════════════════════════════
+   4. LEADERSHIP — YOUR EXACT COMPONENT, UNCHANGED
+══════════════════════════════════════════════════ */
 function Leadership() {
   return (
     <section
@@ -315,70 +386,16 @@ function Leadership() {
               Accountability Starts With Names.
             </h2>
             <p className="font-body text-[14px] leading-[1.7] text-cream-surface/55 max-w-[320px] md:hidden">
-              Two people lead this foundation. You should know who they are and
-              how to reach them directly.
+              The people leading this foundation. You should know who they are
+              and how to reach them directly.
             </p>
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {LEADERS.map((leader, i) => (
-            <motion.div
-              key={leader.name}
-              {...fadeUp(i * 0.12)}
-              className="bg-primary-mid/35 border border-cream-surface/[0.07]
-                rounded-[4px] overflow-hidden"
-            >
-              {/* Photo area  taller, feels like a real photo slot */}
-              <div
-                className="w-full  aspect-[4/3] bg-primary-mid/60 border-b border-cream-surface/[0.06]
-                flex flex-col items-center justify-center gap-2 relative"
-              >
-                {/* Large monogram */}
-              
-               <img src={leader.image} className=" w-full object-top h-full object-cover" alt={leader.name} />
-              </div>
-
-              {/* Info */}
-              <div className="p-7 sm:p-5">
-                <div className="mb-5">
-                  <h3 className="font-display font-bold text-cream-surface text-[20px] leading-snug">
-                    {leader.name}
-                  </h3>
-                  <p className="font-body text-[11px] font-semibold tracking-[0.1em] uppercase text-accent mt-1">
-                    {leader.title}
-                  </p>
-                </div>
-
-                <p className="font-body text-[14px] leading-[1.78] text-cream-surface/70 mb-6">
-                  {leader.bio}
-                </p>
-
-                <div className="pt-5 border-t border-cream-surface/[0.07] flex flex-col gap-2.5">
-                  {leader.email && (
-                    <a
-                      href={`mailto:${leader.email}`}
-                      className="font-body text-[13px] text-accent/75 hover:text-accent
-                        no-underline transition-colors duration-200 flex items-center gap-2"
-                    >
-                      <span className="text-accent/40 text-[10px]">✉</span>
-                      {leader.email}
-                    </a>
-                  )}
-                  <a
-                    href={`https://wa.me/${leader.phone.replace(/\D/g, "")}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-body text-[13px] text-cream-surface/45 hover:text-cream-surface/80
-                      no-underline transition-colors duration-200 flex items-center gap-2"
-                  >
-                    <span className="text-cream-surface/30 text-[10px]">
-                      📱
-                    </span>
-                    WhatsApp: {leader.phone}
-                  </a>
-                </div>
-              </div>
+            <motion.div key={leader.name} {...fadeUp(i * 0.1)}>
+              <LeaderCard leader={leader} />
             </motion.div>
           ))}
         </div>
@@ -387,37 +404,110 @@ function Leadership() {
   );
 }
 
-/* ══════════════════════════════════════════
-   5. TIMELINE
-══════════════════════════════════════════ */
-const MILESTONES = [
-  {
-    year: "[Year]",
-    label: "The Decision",
-    body: "Janet's passing  and the moment the decision to build something in her name was made.",
-  },
-  {
-    year: "[Year]",
-    label: "Foundation Registered",
-    body: "JOAM Foundation formally established with three programme pillars.",
-  },
-  {
-    year: "[Year]",
-    label: "First Programme Launches",
-    body: "First maternal care, scholarship, or elderly support activity  to be filled.",
-  },
-  {
-    year: "[Year]",
-    label: "First Beneficiaries",
-    body: "Real people reached. Real outcomes documented. The work begins.",
-  },
-  {
-    year: "2026",
-    label: "Website Launch",
-    body: "JOAM goes online  open to donors, partners, and communities across Nigeria and the diaspora.",
-  },
-];
+function LeaderCard({ leader }) {
+  const [expanded, setExpanded] = useState(false);
+  const isLong = leader.bio.length > BIO_LIMIT;
+  const displayBio =
+    isLong && !expanded
+      ? leader.bio.slice(0, BIO_LIMIT).trimEnd() + "…"
+      : leader.bio;
 
+  return (
+    <div
+      className="bg-primary-mid/35 border border-cream-surface/[0.07]
+        rounded-[4px] overflow-hidden flex flex-col h-full"
+    >
+      {/* Photo — YOUR exact height, with object-[center_15%] fix */}
+      <div className="w-full h-[500px] md:h-[520px] bg-primary-mid/60 relative overflow-hidden">
+        {leader.photo ? (
+          <img
+            src={leader.photo}
+            alt={leader.name}
+            className="w-full h-full object-cover object-[center_15%]"
+          />
+        ) : (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
+            <div
+              className="w-16 h-16 rounded-full bg-primary border border-accent/30
+              flex items-center justify-center"
+            >
+              <span className="font-display text-[24px] font-bold text-accent leading-none">
+                {leader.initial}
+              </span>
+            </div>
+            <span
+              className="font-body text-[9px] font-medium tracking-[0.12em]
+              uppercase text-cream-surface/20"
+            >
+              Photo Coming Soon
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="p-7 sm:p-5 flex flex-col flex-1">
+        <div className="mb-4">
+          <h3 className="font-display font-bold text-cream-surface text-[20px] leading-snug">
+            {leader.name}
+          </h3>
+          <p
+            className="font-body text-[11px] font-semibold tracking-[0.1em]
+            uppercase text-accent mt-1"
+          >
+            {leader.title}
+          </p>
+        </div>
+
+        <div className="mb-4 flex-1">
+          <p className="font-body text-[14px] leading-[1.78] text-cream-surface/65">
+            {displayBio}
+          </p>
+          {isLong && (
+            <button
+              onClick={() => setExpanded((prev) => !prev)}
+              className="font-body text-[12px] font-semibold text-accent/70
+                hover:text-accent mt-2 bg-transparent border-none cursor-pointer
+                p-0 transition-colors duration-200"
+            >
+              {expanded ? "Read less ↑" : "Read more ↓"}
+            </button>
+          )}
+        </div>
+
+        <div className="pt-4 border-t border-cream-surface/[0.07] flex flex-col gap-2.5 mt-auto">
+          {leader.email && (
+            <a
+              href={`mailto:${leader.email}`}
+              className="font-body text-[13px] text-accent/75 hover:text-accent
+                no-underline transition-colors duration-200 flex items-center gap-2"
+            >
+              <span className="text-[10px]">✉</span>
+              {leader.email}
+            </a>
+          )}
+          {leader.phone && (
+            <a
+              href={`https://wa.me/${leader.phone.replace(/\D/g, "")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="font-body text-[13px] text-cream-surface/45
+                hover:text-cream-surface/80 no-underline transition-colors
+                duration-200 flex items-center gap-2"
+            >
+              <span className="text-[10px]">📱</span>
+              WhatsApp: {leader.phone}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ══════════════════════════════════════════════════
+   5. TIMELINE
+══════════════════════════════════════════════════ */
 function Timeline() {
   return (
     <section
@@ -437,7 +527,7 @@ function Timeline() {
           </h2>
         </motion.div>
 
-        {/* Desktop horizontal */}
+        {/* Desktop — horizontal */}
         <div className="md:hidden relative">
           <motion.div
             initial={{ scaleX: 0 }}
@@ -450,13 +540,17 @@ function Timeline() {
             }}
             className="absolute top-[10px] left-0 right-0 h-px bg-border origin-left"
           />
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-5 relative">
+          <div className="grid grid-cols-4 gap-5 relative">
             {MILESTONES.map((m, i) => (
-              <motion.div key={i} {...fadeUp(i * 0.08)} className="pt-10">
-                {/* Dot */}
-                <div className="absolute top-[5px] w-2.5 h-2.5 rounded-full bg-accent border-2 border-cream" />
-
+              <motion.div
+                key={i}
+                {...fadeUp(i * 0.08)}
+                className="pt-10 relative"
+              >
+                <div
+                  className="absolute top-[5px] w-2.5 h-2.5 rounded-full
+                  bg-accent border-2 border-cream"
+                />
                 <span className="font-display italic text-[13px] text-accent block mb-1.5">
                   {m.year}
                 </span>
@@ -472,10 +566,13 @@ function Timeline() {
 
           <motion.div
             {...fadeUp(0.3)}
-            className="mt-12 p-6 bg-primary-light border border-primary/[0.08] rounded-[4px]
-              flex items-start gap-5"
+            className="mt-12 p-6 bg-primary-light border border-primary/[0.08]
+              rounded-[4px] flex items-start gap-5"
           >
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 mt-0.5">
+            <div
+              className="w-8 h-8 rounded-full bg-primary flex items-center
+              justify-center shrink-0 mt-0.5"
+            >
               <span className="text-accent text-[12px]">→</span>
             </div>
             <div>
@@ -483,20 +580,23 @@ function Timeline() {
                 Where We Are Going
               </h4>
               <p className="font-body text-[13px] leading-[1.7] text-ink-secondary">
-                [One sentence on the foundation's 3–5 year ambition  to be
+                [One sentence on the foundation's 3–5 year ambition — to be
                 filled by Jacob Adesina.]
               </p>
             </div>
           </motion.div>
         </div>
 
-        {/* Mobile vertical */}
+        {/* Mobile — vertical */}
         <div className="hidden md:block relative pl-7">
           <div className="absolute top-0 left-2 bottom-0 w-px bg-border" />
           <div className="flex flex-col gap-8">
             {MILESTONES.map((m, i) => (
               <motion.div key={i} {...fadeUp(i * 0.07)} className="relative">
-                <div className="absolute -left-[22px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent border-2 border-cream" />
+                <div
+                  className="absolute -left-[22px] top-1.5 w-2.5 h-2.5
+                  rounded-full bg-accent border-2 border-cream"
+                />
                 <span className="font-display italic text-[13px] text-accent block mb-1">
                   {m.year}
                 </span>
@@ -509,7 +609,6 @@ function Timeline() {
               </motion.div>
             ))}
           </div>
-
           <motion.div
             {...fadeUp(0.2)}
             className="mt-8 p-5 bg-primary-light border border-primary/[0.08] rounded-[4px]"
@@ -518,7 +617,7 @@ function Timeline() {
               Where We Are Going
             </h4>
             <p className="font-body text-[13px] leading-[1.7] text-ink-secondary">
-              [One sentence on the foundation's 3–5 year ambition  to be filled
+              [One sentence on the foundation's 3–5 year ambition — to be filled
               by Jacob Adesina.]
             </p>
           </motion.div>
@@ -528,33 +627,9 @@ function Timeline() {
   );
 }
 
-/* ══════════════════════════════════════════
-   6. TRANSPARENCY COMMITMENT
-══════════════════════════════════════════ */
-const TRANSPARENCY = [
-  {
-    num: "01",
-    headline: "Every Naira Is Tracked.",
-    body: "All donations are received into a dedicated foundation account. No personal accounts. No informal transfers. Every inflow is recorded against the programme it was allocated to.",
-  },
-  {
-    num: "02",
-    headline: "Every Programme Is Documented.",
-    body: "Our field teams document every beneficiary interaction  anonymised where necessary, detailed enough to be meaningful. Impact reports are available to every donor on request.",
-  },
-  {
-    num: "03",
-    headline: "Every Donor Deserves an Update.",
-    body: "When you give to JOAM, you will hear from us  not with a generic newsletter, but with a specific account of what your contribution made possible. That is a commitment, not a courtesy.",
-  },
-  {
-    num: "04",
-    headline: "Our Leadership Is Contactable.",
-    body: "Jacob Adesina and Abubakar Abdulbasit are reachable by email and WhatsApp. If you have a question about how this foundation operates, ask it directly. We will answer.",
-    link: { label: "Contact Us", href: "/contact" },
-  },
-];
-
+/* ══════════════════════════════════════════════════
+   6. TRANSPARENCY
+══════════════════════════════════════════════════ */
 function TransparencyCommitment() {
   return (
     <section
@@ -582,7 +657,7 @@ function TransparencyCommitment() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {TRANSPARENCY.map((pt, i) => (
             <motion.div
               key={pt.num}
@@ -619,9 +694,9 @@ function TransparencyCommitment() {
   );
 }
 
-/* ══════════════════════════════════════════
-   7. CTA BLOCK
-══════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════
+   7. CTA
+══════════════════════════════════════════════════ */
 function AboutCTA() {
   return (
     <section
@@ -653,11 +728,10 @@ function AboutCTA() {
 
         <motion.p
           {...fadeUp(0.26)}
-          className="font-body text-[15px] leading-[1.8] text-cream-surface/70
-            mb-8"
+          className="font-body text-[15px] leading-[1.8] text-cream-surface/70 mb-8"
         >
           A foundation is only as strong as the people who believe in it early.
-          You are here at the beginning  and that matters more than you know.
+          You are here at the beginning — and that matters more than you know.
           Every programme we build, every life we reach, starts with someone
           deciding this work is worth funding.{" "}
           <em className="not-italic font-semibold text-cream-surface/85">

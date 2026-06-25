@@ -87,7 +87,7 @@ function VolunteerHero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.32 }}
-          className="font-body text-[16px] leading-[1.75] text-cream-surface/62 max-w-[460px] mb-10"
+          className="font-body text-[16px] leading-[1.75] text-cream-surface/70 max-w-[460px] mb-10"
         >
           Some people give money. Some people give time. Some people give
           skills. All of it matters. All of it moves this work forward. If you
@@ -206,14 +206,14 @@ const ROLES = [
     headline: "Show Up Where It Counts.",
     body: "Field volunteers work directly alongside our programme teams  supporting maternal care outreach, distributing provisions to elderly beneficiaries, assisting at scholarship events, and serving as a consistent human presence in the communities we serve. Physical availability required. Compassion non-negotiable.",
     commitment:
-      "[X hours per week / month  to be confirmed by programme team]",
+      "Flexible hours",
     tag: "In-Person",
   },
   {
     title: "Administrative Volunteer",
     headline: "Keep the Foundation Running.",
     body: "Every programme depends on systems, records, and organisation that someone has to build and maintain. Administrative volunteers support the foundation's operations  managing beneficiary records, coordinating communications, supporting reporting, and ensuring the back-end runs as well as the front-line.",
-    commitment: "[X hours per week  flexible]",
+    commitment: "Flexible hours, remote or in-person",
     tag: "Remote-Friendly",
   },
   {
@@ -351,9 +351,9 @@ function SignUpForm() {
           >
             Tell Us About Yourself.
           </h2>
-          <p className="font-body text-[14px] leading-[1.75] text-cream-surface/58 mb-8">
+          <p className="font-body text-[14px] leading-[1.75] text-cream-surface/70 mb-8">
             Fill in the form. We review every submission personally and will be
-            in touch within [X] business days.
+            in touch within 2 business days.
           </p>
 
           {/* What to expect */}
@@ -536,7 +536,7 @@ function SignUpForm() {
                 Submit My Application →
               </motion.button>
 
-              <p className="font-body text-[12px] text-cream-surface/38 text-center leading-[1.6]">
+              <p className="font-body text-[12px] text-cream-surface/70 text-center leading-[1.6]">
                 We read every application. You will hear from us directly  not
                 from an automated system.
               </p>

@@ -6,9 +6,9 @@ const NAV_LINKS = [
   { label: "Programs", href: "/programs" },
   { label: "Events",   href: "/events" },
   { label: "Blog",     href: "/blog" },
-  { label: "Gallery",  href: "/gallery" },
+  // { label: "Gallery",  href: "/gallery" },
   { label: "Contact",  href: "/contact" },
-  { label: "Partner",  href: "/partner" },
+  // { label: "Partner",  href: "/partner" },
 ];
 
 export default function Navbar() {
