@@ -43,19 +43,16 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 no-underline shrink-0 group">
-            <div className="w-9 h-9 rounded-full border border-accent/70 group-hover:border-accent flex items-center justify-center transition-colors duration-200">
-              <span className="font-display text-[17px] font-bold text-accent leading-none">
-                J
-              </span>
-            </div>
-            <div className="hidden sm:flex flex-col">
+            
+             <img src="/joam_logo.png" className="w-40 md:w-40 md:py-4" alt="JOAM Foundation Logo" />
+            {/* <div className="hidden sm:flex flex-col">
               <span className="font-display font-bold text-[15px] text-cream-surface leading-none tracking-wide">
                 JOAM Foundation
               </span>
               <span className="font-body text-[8.5px] font-medium tracking-[0.13em] uppercase text-cream-surface/40 mt-0.5">
                 Janet Oluwaremilekun Adesina Memorial
               </span>
-            </div>
+            </div> */}
           </a>
 
           {/* Desktop nav — centered */}

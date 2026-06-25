@@ -74,13 +74,13 @@ const COMMITMENTS = [
     headline: "We Respond Within 2–3 Business Days.",
     body: "For most enquiries, we respond faster. For complex partnership or programme questions that require more thought, we will acknowledge your message within 24 hours and give you a full response within three business days.",
   },
+  // {
+  //   num: "03",
+  //   headline: "Urgent? Use WhatsApp.",
+  //   body: "For time-sensitive matters  including beneficiary support requests  WhatsApp is the fastest way to reach us. Jacob and Abubakar's numbers are above. They are reachable during working hours.",
+  // },
   {
     num: "03",
-    headline: "Urgent? Use WhatsApp.",
-    body: "For time-sensitive matters  including beneficiary support requests  WhatsApp is the fastest way to reach us. Jacob and Abubakar's numbers are above. They are reachable during working hours.",
-  },
-  {
-    num: "04",
     headline: "We Will Tell You If We Cannot Help.",
     body: "Not every request is something JOAM can fulfil right now. If we receive a message we cannot act on, we will tell you honestly and point you toward someone who can help. You will not be left without an answer.",
   },
@@ -94,8 +94,8 @@ export default function Contact() {
     <main className="overflow-x-hidden">
       <ContactHero />
       <ContactForm />
-      <DirectContacts />
-      <OfficeLocation />
+      {/* <DirectContacts /> */}
+      {/* <OfficeLocation /> */}
       <ResponseCommitment />
     </main>
   );
@@ -198,7 +198,7 @@ function ContactForm() {
               Or reach us directly
             </p>
             <a
-              href="mailto:hello@joamfoundation.org"
+              href="mailto:joamfoundation1@gmail.com "
               className="flex items-center gap-3 font-body text-[14px] text-ink-secondary
                 hover:text-primary no-underline transition-colors duration-200 group"
             >
@@ -209,9 +209,9 @@ function ContactForm() {
               >
                 <span className="text-primary text-[11px]">✉</span>
               </div>
-              hello@joamfoundation.org
+              joamfoundation1@gmail.com
             </a>
-            <a
+            {/* <a
               href="https://wa.me/2348095900357"
               target="_blank"
               rel="noreferrer"
@@ -226,7 +226,7 @@ function ContactForm() {
                 <span className="text-primary text-[11px]">📱</span>
               </div>
               WhatsApp: +234 809 590 0357
-            </a>
+            </a> */}
           </div>
 
           {/* Response note */}
@@ -350,10 +350,10 @@ function ContactForm() {
                   Send My Message →
                 </motion.button>
 
-                <p className="font-body text-[12px] text-ink-muted text-center leading-[1.6]">
+                {/* <p className="font-body text-[12px] text-ink-muted text-center leading-[1.6]">
                   Every message is read by a real person. For urgent matters,
                   WhatsApp Jacob or Abubakar directly.
-                </p>
+                </p> */}
               </motion.form>
             )}
           </AnimatePresence>

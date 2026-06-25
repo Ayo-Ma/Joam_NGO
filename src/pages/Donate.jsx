@@ -308,122 +308,20 @@ export default function Donate() {
               Your donation is processed securely. You will receive a
               confirmation and a receipt immediately.{" "}
               <a
-                href="mailto:jacobgreat1@gmail.com"
+                href="mailto:joamfoundation1@gmail.com"
                 className="text-primary no-underline hover:underline"
               >
-                Questions? Email Jacob directly.
+                Questions? Email Us directly.
               </a>
             </p>
           </motion.div>
         </section>
 
-        {/* ── 4. WHAT YOUR DONATION FUNDS ────────────── */}
-        <section
-          aria-labelledby="impact-heading"
-          className="bg-primary py-20 md:py-14 px-16 lg:px-10 sm:px-6"
-        >
-          <div className="max-w-container mx-auto">
-            {/* Header */}
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center mb-12 md:mb-8"
-            >
-              <h2
-                id="impact-heading"
-                className="font-display font-bold text-cream-surface leading-[1.1] tracking-[-0.01em]
-                  text-[clamp(24px,3vw,38px)] mb-3"
-              >
-                What Happens When You Give.
-              </h2>
-              <p className="font-body text-[14px] leading-[1.75] text-cream-surface/55 max-w-[480px] mx-auto">
-                This is not a general fund. Every amount below maps to a
-                specific, real cost inside one of our three programmes.
-              </p>
-            </motion.div>
-
-            {/* Impact cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-10">
-              {FUNDING_BREAKDOWN.map((item, i) => (
-                <motion.div
-                  key={item.amount}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{
-                    duration: 0.7,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: i * 0.07,
-                  }}
-                  className="group bg-primary-mid/40 border border-cream-surface/[0.07]
-                    hover:border-accent/30 rounded-[4px] overflow-hidden
-                    transition-all duration-250 cursor-pointer"
-                  onClick={() => handleSelectFromOutcome(item.amount)}
-                  whileHover={{ y: -3 }}
-                >
-                  {/* Image placeholder */}
-                  <div className="w-full h-[140px] bg-primary-mid/60 relative flex items-center justify-center">
-                    <div className="flex flex-col items-center gap-1.5 text-center px-4">
-                      <div className="w-px h-6 bg-cream-surface/15" />
-                      <span className="font-body text-[9px] font-medium tracking-[0.12em] uppercase text-cream-surface/22">
-                        {item.img}
-                      </span>
-                    </div>
-                    {/* Tag */}
-                    <div className="absolute top-3 left-3">
-                      <span
-                        className="font-body text-[9px] font-semibold tracking-[0.1em] uppercase
-                        text-accent bg-accent/10 border border-accent/20 rounded-pill px-2.5 py-1"
-                      >
-                        {item.tag}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-5">
-                    <div className="flex items-baseline justify-between gap-3 mb-3">
-                      <span className="font-display font-bold text-accent text-[22px] leading-none">
-                        {item.amount}
-                      </span>
-                      <span
-                        className="font-body text-[10px] font-semibold tracking-[0.1em] uppercase
-                        text-cream-surface/30 group-hover:text-accent/60 transition-colors duration-200"
-                      >
-                        Select →
-                      </span>
-                    </div>
-                    <p className="font-body text-[13px] leading-[1.7] text-cream-surface/60">
-                      {item.covers}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Footer note */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="font-body text-[13px] text-cream-surface/40 text-center"
-            >
-              Can't find an amount that fits? Use the custom field above. ₦2,000
-              matters here. ₦500,000 changes a programme.{" "}
-              <span className="text-cream-surface/60">
-                Every gift has a home.
-              </span>
-            </motion.p>
-          </div>
-        </section>
 
         {/* ── 5. TRUST SIGNAL ────────────────────────── */}
         <section
           aria-label="Why this foundation"
-          className="bg-cream py-16 md:py-12 px-16 lg:px-10 sm:px-6"
+          className="bg-green-900 py-16 md:py-12 px-16 lg:px-10 sm:px-6"
         >
           <div className="max-w-[640px] mx-auto">
             <motion.div
@@ -444,15 +342,13 @@ export default function Donate() {
               <div className="flex items-start gap-5 mb-6">
                 {/* Photo placeholder */}
                 <div
-                  className="w-16 h-16 rounded-full bg-primary-light border border-primary/[0.1]
+                  className="w-20 h-29 overflow-hidden  rounded-full bg-primary-light border border-primary/[0.1]
                   flex items-center justify-center shrink-0"
                 >
-                  <span className="font-display text-[20px] font-bold text-primary leading-none">
-                    J
-                  </span>
+                 <img src="jacob.jpeg" className=" object-contain  " alt="" />
                 </div>
                 <div className="pt-1">
-                  <p className="font-display font-bold text-ink text-[16px] leading-snug">
+                  <p className="font-display font-bold text-cream text-[16px] leading-snug">
                     Jacob Adesina
                   </p>
                   <p className="font-body text-[12px] font-semibold tracking-[0.08em] uppercase text-accent mt-0.5">
@@ -464,7 +360,7 @@ export default function Donate() {
               {/* Pull quote */}
               <blockquote
                 className="font-display italic text-[clamp(16px,1.8vw,20px)]
-                leading-[1.55] text-ink m-0 mb-5 border-l-[2px] border-accent pl-5"
+                leading-[1.55] text-white/80 m-0 mb-5 border-l-[2px] border-accent pl-5"
               >
                 "I did not build JOAM to raise money. I built it to honour a
                 life and change lives. Every naira that comes through this
@@ -473,15 +369,15 @@ export default function Donate() {
               </blockquote>
 
               {/* Attribution + contact */}
-              <p className="font-body text-[13px] text-ink-secondary leading-[1.7]">
+              <p className="font-body text-[13px] text-cream/50 leading-[1.7]">
                 Questions about how your donation is used?{" "}
                 <a
-                  href="mailto:jacobgreat1@gmail.com"
-                  className="text-primary no-underline font-semibold
+                  href="mailto:joamfoundation1@gmail.com"
+                  className="text-cream no-underline font-semibold
                     border-b border-primary/30 hover:border-primary
                     transition-colors duration-200"
                 >
-                  Email Jacob directly: jacobgreat1@gmail.com
+                  Email Us @ joamfoundation1@gmail.com
                 </a>
               </p>
             </motion.div>
@@ -520,21 +416,12 @@ export default function Donate() {
 ══════════════════════════════════════════════════ */
 function MinimalHeader() {
   return (
-    <header className="bg-cream border-b border-border h-[64px] flex items-center px-16 lg:px-10 sm:px-6">
+    <header className="bg-cream border-b justify-between border-border h-[64px] flex items-center px-16 lg:px-10 sm:px-6">
+      <a href="/" className="font-body text-[14px] text-ink hover:text-ink/70 no-underline hover:text-yellow-500">
+        ← Back
+      </a>
       <a href="/" className="flex items-center gap-3 no-underline">
-        <div className="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center">
-          <span className="font-display text-[16px] font-bold text-primary leading-none">
-            J
-          </span>
-        </div>
-        <div>
-          <div className="font-display text-[14px] font-bold text-ink tracking-wide leading-snug">
-            JOAM Foundation
-          </div>
-          <div className="font-body text-[8px] font-medium text-ink-muted tracking-[0.1em] uppercase mt-px">
-            Janet Oluwaremilekun Adesina Memorial
-          </div>
-        </div>
+       <img src="/joam_logo.png" className="w-40 md:w-40 p-4" alt="JOAM Foundation Logo" />
       </a>
     </header>
   );

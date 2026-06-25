@@ -33,17 +33,7 @@ export default function Footer() {
           {/* Brand column — full width on sm, 1 col on lg */}
           <div className="flex flex-col gap-5 sm:col-span-2 lg:col-span-1">
             <a href="/" className="inline-flex items-center gap-3 no-underline group w-fit">
-              <div className="w-9 h-9 rounded-full border border-accent/60 flex items-center justify-center shrink-0">
-                <span className="font-display text-[16px] font-bold text-accent leading-none">J</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-[16px] text-cream-surface leading-none tracking-[-0.01em]">
-                  JOAM Foundation
-                </span>
-                <span className="font-body text-[9px] font-semibold tracking-[0.14em] uppercase text-cream-surface/35 mt-0.5">
-                  Janet Oluwaremilekun Adesina Memorial
-                </span>
-              </div>
+              <img src="/joam_logo.png" className="w-40 md:w-40 md:py-4" alt="JOAM Foundation Logo" />
             </a>
 
             <p className="font-body text-[14px] leading-[1.75] text-cream-surface/50 max-w-[240px]">
@@ -117,19 +107,19 @@ export default function Footer() {
                 12 Adesina Close,<br />Ado-Ekiti, Nigeria
               </p>
               <a
-                href="mailto:hello@joamfoundation.org"
+                href="mailto:joamfoundation1@gmail.com"
                 className="font-body text-[14px] text-cream-surface/55 hover:text-cream-surface
                   no-underline transition-colors duration-200"
               >
-                hello@joamfoundation.org
+                joamfoundation1@gmail.com
               </a>
-              <a
+              {/* <a
                 href="tel:+2348000000000"
                 className="font-body text-[14px] text-cream-surface/55 hover:text-cream-surface
                   no-underline transition-colors duration-200"
               >
                 +234 800 000 0000
-              </a>
+              </a> */}
             </address>
           </div>
         </div>
